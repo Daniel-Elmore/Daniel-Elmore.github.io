@@ -8,7 +8,7 @@ toc: true
 header:
   teaser: "/assets/images/projects/city-bike-hero.png"
 ---
-
+![]/assets/images/projects/city-bike-hero.png
 ## Overview
 This project analyzed Citi Bike’s New York system through the lens of behavioral economics and data analytics. I examined over **362,000 trips from May 2016–2023**, running statistical tests on distance, duration, fees, and station preferences. The goal was to understand how subscribers and casual riders differ — and what that means for pricing models, station placement, and service design.
 
