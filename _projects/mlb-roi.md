@@ -1,9 +1,10 @@
 ---
 title: "Are MLB Teams Spending Smarter? (2012–2016)"
-excerpt: "SQL + Python case study showing payroll explained only ~12% of wins, with Rays & A’s nearly 3× more efficient than Yankees & Dodgers."
+excerpt: "SQL + Python case study showing payroll explained only ~12% of wins and efficiency gaps of 10+ wins between teams."
 layout: single
 author_profile: true
 toc: true
+date: 2025-09-05
 ---
 
 ## Overview
