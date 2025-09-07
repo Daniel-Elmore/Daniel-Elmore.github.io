@@ -74,16 +74,37 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 /* Cards/teasers subtle border */
 .archive__item { border-color: rgba(10,31,68,0.08); }
 
-/* ===== Footer ===== */
+/* ===== Footer (fix icons) ===== */
 .page__footer {
-  background: $brand-secondary;
+  background: #6699CC;
   color: #fff;
   border-top: 0;
 }
 
-/* Footer text/links/icons — white; font = Lato for UI feel */
-.page__footer, .page__footer * {
+/* Use Lato for text in the footer (not for icons) */
+.page__footer,
+.page__footer a,
+.page__footer p,
+.page__footer li,
+.page__footer small,
+.page__footer span,
+.page__footer strong,
+.page__footer em {
+  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
   color: #fff !important;
-  font-family: $font-sans !important;
 }
+
 .page__footer a:hover { text-decoration: underline; }
+
+/* Restore Font Awesome families for icons */
+.page__footer .fas,
+.page__footer .far {
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900; /* solid */
+  color: #fff !important;
+}
+.page__footer .fab {
+  font-family: "Font Awesome 5 Brands" !important;
+  font-weight: 400;
+  color: #fff !important;
+}
