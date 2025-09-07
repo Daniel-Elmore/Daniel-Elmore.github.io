@@ -161,3 +161,68 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   overflow-wrap: break-word !important;
   hyphens: auto !important;
 }
+
+
+/* =========================
+   PROJECTS PAGE – lock to a sane grid
+   (cover both class names used by Minimal Mistakes)
+   ========================= */
+
+/* Widen the content area beside the sidebar a bit */
+.layout--collection .page__content { max-width: 1200px !important; }
+
+/* Force grid, kill masonry/columns */
+.layout--collection .grid__wrapper,
+.layout--collection .entries-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(320px, 1fr)) !important;
+  gap: 2rem !important;
+
+  /* neutralize column/masonry props some skins set */
+  column-count: initial !important;
+  column-gap: initial !important;
+  -moz-column-count: initial !important;
+  -moz-column-gap: initial !important;
+  -webkit-column-count: initial !important;
+  -webkit-column-gap: initial !important;
+}
+
+@media (max-width: 900px) {
+  .layout--collection .grid__wrapper,
+  .layout--collection .entries-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Make sure items behave inside the grid cells */
+.layout--collection .archive__item,
+.layout--collection .grid__wrapper > * ,
+.layout--collection .entries-grid > * {
+  width: auto !important;
+  margin: 0 !important;
+  break-inside: avoid !important;   /* no column breaks creating tiny widths */
+}
+
+/* Teaser images scale properly */
+.layout--collection .archive__item-teaser img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+
+/* Normal wrapping so text doesn’t go vertical */
+.layout--collection .archive__item,
+.layout--collection .archive__item * {
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+}
+
+/* (Optional) slightly larger, readable excerpt */
+.layout--collection .archive__item-excerpt {
+  font-family: $font-sans !important;
+  font-size: 0.95rem !important;
+  line-height: 1.55 !important;
+  max-width: 60ch !important;
+}
