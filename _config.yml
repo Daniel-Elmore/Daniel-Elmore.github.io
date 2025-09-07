@@ -55,7 +55,7 @@ reCaptcha:
 # Feeds & Search
 atom_feed:
   path:                  # default feed.xml
-  hide:
+  hide: true
 search:                  # default false shows search icon when enabled by skin
 search_full_content:
 search_provider: lunr
