@@ -132,3 +132,71 @@ a:hover, a:focus {
 .page {
   border-left: 0;
 }
+
+/* ===== Sidebar should fill the whole left column ===== */
+.page__sidebar {
+  background-color: #6699CC;     /* full column */
+  color: #fff;
+  padding-top: 0.75rem;          /* optional breathing room */
+  padding-bottom: 0.75rem;
+}
+
+/* Make inner "author card" transparent so the column color shows through */
+.page__sidebar .sidebar {
+  background: transparent;
+  color: inherit;
+  box-shadow: none;
+}
+
+/* All text/links/icons inside sidebar = white */
+.page__sidebar,
+.page__sidebar a,
+.page__sidebar .author__name,
+.page__sidebar .author__bio,
+.page__sidebar .author__urls a,
+.page__sidebar .author__urls li a,
+.page__sidebar .author__urls-wrapper a,
+.page__sidebar i,
+.page__sidebar .fab,
+.page__sidebar .fas {
+  color: #fff !important;
+}
+
+/* Tone down default borders/backgrounds inside the author block */
+.page__sidebar .author__urls-wrapper,
+.page__sidebar .author__content {
+  background: transparent;
+  border-color: rgba(255,255,255,0.25);
+}
+
+/* ===== Force global typography (skins sometimes override) ===== */
+html, body {
+  font-family: "EB Garamond", serif !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.site-title {
+  font-family: "EB Garamond", serif !important;
+  color: #0A1F44;
+}
+
+/* Nav/UI text = Lato */
+.masthead .greedy-nav a,
+.masthead__menu-item > a,
+.greedy-nav__toggle,
+.page__meta,
+.taxonomy__count,
+.btn,
+.btn--primary,
+.sidebar .author__urls a {
+  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+}
+
+/* Keep top bar + links styled */
+.masthead,
+.masthead .greedy-nav { background-color: #0A1F44; }
+.masthead .site-title,
+.masthead .site-title a,
+.masthead .greedy-nav a,
+.masthead__menu-item > a { color: #fff !important; }
