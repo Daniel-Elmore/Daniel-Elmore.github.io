@@ -114,15 +114,15 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 }
 
 
-/* ===== Site Title (masthead left) ===== */
+/* Make site title bigger */
 .masthead .site-title,
 .masthead .site-title a {
   font-family: "EB Garamond", serif !important;
-  font-weight: 600; /* gives it some weight */
-  font-size: 1.35rem !important; /* bump size */
-  letter-spacing: 0.5px; /* optional for readability */
+  font-size: 2rem !important;   /* adjust this up/down as needed */
+  font-weight: 700;
   color: #ffffff !important;
 }
+
 
 /* Hide site subtitle in the masthead if it exists */
 .masthead .site-subtitle { display: none !important; }
