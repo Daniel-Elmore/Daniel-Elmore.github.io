@@ -89,7 +89,7 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 /* Project teaser description = Lato */
 .archive__item-excerpt {
   font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
-  font-size: 0.75rem;
+  font-size: 0.6rem;
   line-height: 1.5;
 }
 
@@ -173,3 +173,28 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
     color: #ffffff !important;
   }
 }
+
+/* ==== Projects: reliable 2-up layout, 1-up on phones ==== */
+/* Let the theme render the grid, then adjust the items' width with flex */
+.entries-grid {
+  display: flex !important;
+  flex-wrap: wrap;
+  margin-left: -1rem;   /* even gutters */
+  margin-right: -1rem;
+}
+
+.entries-grid .archive__item {
+  display: block;                 /* ensure the card itself isn't flex */
+  width: calc(50% - 2rem);        /* 2 columns */
+  margin: 0 1rem 2rem;            /* gutters and row gap */
+}
+
+@media (max-width: 768px) {
+  .entries-grid .archive__item {
+    width: 100%;                  /* 1 column on phones */
+    margin: 0 0 2rem;
+  }
+}
+
+/* keep titles/excerpts readable */
+.archive__item-title { word-break: normal; hyphens: auto; }
