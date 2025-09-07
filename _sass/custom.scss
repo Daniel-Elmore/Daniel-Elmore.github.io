@@ -226,3 +226,19 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   line-height: 1.55 !important;
   max-width: 60ch !important;
 }
+
+
+/* === Adjust project card spacing and subtext === */
+
+/* More breathing room between cards */
+.layout--collection .entries-grid {
+  grid-column-gap: 3rem !important; /* wider horizontal gap */
+  grid-row-gap: 2.5rem !important;  /* a bit more vertical spacing */
+}
+
+/* Smaller, lighter subtext for project descriptions */
+.layout--collection .archive__item-excerpt {
+  font-size: 0.8rem !important;   /* smaller text */
+  line-height: 1.4 !important;    /* tighter spacing */
+  color: #444 !important;         /* slightly softer than body text */
+}
