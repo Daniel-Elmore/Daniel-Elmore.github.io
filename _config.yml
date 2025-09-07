@@ -9,10 +9,7 @@
 # Use a built-in skin for quick styling tweaks. You can change this later to
 # "air", "mint", "plum", etc.
 minimal_mistakes_skin: "default"
-# If you were using Minimal Mistakes as a remote theme instead of a fork, you
-# would uncomment the line below. Since this repo likely contains the theme
-# itself, leave it commented.
-# remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: "mmistakes/minimal-mistakes"
 
 # ---------------------------------
 # Site Settings
@@ -201,8 +198,6 @@ timezone: "America/New_York"
 # ---------------------------------
 # Pagination (disabled for portfolio)
 # ---------------------------------
-paginate: 0
-paginate_path: /page:num/
 
 # Disable advanced pagination (jekyll-paginate-v2)
 pagination:
