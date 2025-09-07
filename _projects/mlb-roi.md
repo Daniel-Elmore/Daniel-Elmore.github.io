@@ -9,6 +9,8 @@ header:
   teaser: "/assets/images/projects/mlb-roi-hero.png"
 ---
 
+![](/assets/images/projects/mlb-roi-hero.png)
+
 ## Overview
 This project examined whether escalating payrolls in Major League Baseball were truly buying more wins in the post-Moneyball era. For a GM or front-office executive, the question matters because efficiency—not just scale—determines competitive advantage. I built a PostgreSQL + Python pipeline integrating the Lahman database with Neil Paine’s WAR dataset, and used OLS regression to measure payroll’s incremental effect on wins after controlling for roster quality. The headline finding: payroll explained only ~12% of team performance, and beyond ~$150M, each additional $10M bought less than half a win.
 
