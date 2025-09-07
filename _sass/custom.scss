@@ -245,3 +245,39 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 }
 
 
+/* ===== Projects page layout overrides ===== */
+
+/* Force a reliable 2-column grid on desktop, 1-column on phones */
+.layout--collection .entries-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(260px, 1fr)) !important;
+  grid-column-gap: 2rem !important;
+  grid-row-gap: 2rem !important;
+}
+
+@media (max-width: 768px) {
+  .layout--collection .entries-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Let the excerpt breathe horizontally and be readable */
+.layout--collection .archive__item-excerpt {
+  max-width: 60ch !important;   /* ~600–700px of readable text */
+  font-size: 0.95rem !important;
+  line-height: 1.55 !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Make teaser images scale with the card width */
+.layout--collection .archive__item-teaser img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+
+/* Optional: tidy card spacing a bit */
+.layout--collection .archive__item {
+  margin: 0 !important;
+}
