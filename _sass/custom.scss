@@ -27,10 +27,9 @@ h1, h2, h3, h4, h5, h6,
 
 .archive__item-excerpt {
   font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
-  font-size: 0.75rem;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
-
 
 /* Links */
 a { color: $brand-secondary; text-underline-offset: 2px; }
@@ -44,9 +43,19 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 .masthead__menu-item > a { color: #fff !important; }
 
 /* Use Lato for navigation/UI text in the header */
-.masthead, .masthead * {
-  font-family: $font-sans !important;
+.masthead, .masthead * { font-family: $font-sans !important; }
+
+/* Larger site title */
+.masthead .site-title,
+.masthead .site-title a {
+  font-family: "EB Garamond", serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 700;
+  color: #ffffff !important;
 }
+
+/* Hide site subtitle in masthead */
+.masthead .site-subtitle { display: none !important; }
 
 /* Mobile hamburger */
 .greedy-nav__toggle,
@@ -59,17 +68,30 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   background-color: $brand-main !important;
 }
 
+/* ==== Mobile nav colors ==== */
+@media (max-width: 860px) {
+  .masthead,
+  .masthead .greedy-nav,
+  .greedy-nav .visible-links,
+  .greedy-nav .hidden-links {
+    background-color: $brand-main !important;
+  }
+  .greedy-nav a,
+  .greedy-nav .hidden-links a { color: #ffffff !important; }
+  .greedy-nav .hidden-links li { border-color: rgba(255,255,255,0.15) !important; }
+}
+
 /* ===== Sidebar (author panel) — no blue background ===== */
 .page__sidebar,
 .page__sidebar .sidebar {
-  background: transparent !important;   /* remove light blue */
+  background: transparent !important;
   box-shadow: none;
 }
 
-/* Sidebar fonts = EB Garamond; keep icons/links readable */
+/* Sidebar fonts = EB Garamond */
 .page__sidebar, .page__sidebar * {
   font-family: $font-serif !important;
-  color: inherit; /* use page default colors */
+  color: inherit;
 }
 
 /* ===== Buttons/UI ===== */
@@ -86,21 +108,12 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 /* Cards/teasers subtle border */
 .archive__item { border-color: rgba(10,31,68,0.08); }
 
-/* Project teaser description = Lato */
-.archive__item-excerpt {
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
-  font-size: 0.6rem;
-  line-height: 1.5;
-}
-
 /* ===== Footer (blue background, Lato text, icons fixed) ===== */
 .page__footer {
-  background: #6699CC;
+  background: $brand-secondary;
   color: #fff;
   border-top: 0;
 }
-
-/* Text-only elements use Lato */
 .page__footer p,
 .page__footer li,
 .page__footer small,
@@ -109,16 +122,12 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 .page__footer em,
 .page__footer .footer__copyright,
 .page__footer .page__footer-follow {
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+  font-family: $font-sans !important;
   color: #fff;
 }
-
-.page__footer a {
-  color: #fff;
-}
+.page__footer a { color: #fff; }
 .page__footer a:hover { text-decoration: underline; }
-
-/* Restore icon fonts explicitly */
+/* Restore icon fonts */
 .page__footer i,
 .page__footer .fas,
 .page__footer .far {
@@ -132,193 +141,52 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   color: #fff;
 }
 
+/* =======================
+   PROJECTS PAGE (CLEAN)
+   ======================= */
 
-/* Make site title bigger */
-.masthead .site-title,
-.masthead .site-title a {
-  font-family: "EB Garamond", serif !important;
-  font-size: 1.5rem !important;   /* adjust this up/down as needed */
-  font-weight: 700;
-  color: #ffffff !important;
+/* Widen the content area beside the sidebar */
+.layout--collection .page__content {
+  max-width: 1200px !important;
 }
 
-
-/* Hide site subtitle in the masthead if it exists */
-.masthead .site-subtitle { display: none !important; }
-
-/* ==== Mobile nav colors ==== */
-@media (max-width: 860px) {
-  .masthead,
-  .masthead .greedy-nav,
-  .greedy-nav .visible-links,
-  .greedy-nav .hidden-links {
-    background-color: #0A1F44 !important; /* brand navy */
-  }
-
-  .greedy-nav a,
-  .greedy-nav .hidden-links a {
-    color: #ffffff !important;
-  }
-
-  .greedy-nav .hidden-links li {
-    border-color: rgba(255,255,255,0.15) !important; /* subtle dividers */
-  }
-
-  /* keep the toggle icon visible */
-  .greedy-nav__toggle,
-  .greedy-nav .hamburger,
-  .greedy-nav .hamburger:before,
-  .greedy-nav .hamburger:after {
-    background-color: #0A1F44 !important;
-    color: #ffffff !important;
-  }
-}
-
-/* ==== Projects: reliable 2-up layout, 1-up on phones ==== */
-/* Let the theme render the grid, then adjust the items' width with flex */
-.entries-grid {
-  display: flex !important;
-  flex-wrap: wrap;
-  margin-left: -1rem;   /* even gutters */
-  margin-right: -1rem;
-}
-
-.entries-grid .archive__item {
-  display: block;                 /* ensure the card itself isn't flex */
-  width: calc(50% - 2rem);        /* 2 columns */
-  margin: 0 1rem 2rem;            /* gutters and row gap */
-}
-
-@media (max-width: 768px) {
-  .entries-grid .archive__item {
-    width: 100%;                  /* 1 column on phones */
-    margin: 0 0 2rem;
-  }
-}
-
-/* keep titles/excerpts readable */
-.archive__item-title { word-break: normal; hyphens: auto; }
-
-/* ==== Project card width + excerpt expansion ==== */
-
-/* widen the text area inside project cards */
-.archive__item-excerpt {
-  max-width: 600px;   /* lets text breathe horizontally */
-  font-size: 0.9rem;  /* restore size closer to body text */
-  line-height: 1.5;
-  white-space: normal;
-}
-
-/* ensure cards don’t collapse too narrow */
-.layout--collection .archive__item {
-  flex: 0 0 48%;      /* half width (two per row) */
-  max-width: 48%;
-}
-
-@media (max-width: 768px) {
-  .layout--collection .archive__item {
-    flex: 0 0 100%;   /* full width on small screens */
-    max-width: 100%;
-  }
-}
-
-/* ==== Force wider project cards and longer excerpts ==== */
-.layout--collection .archive__item {
-  flex: 0 0 48% !important;   /* half width (two columns) */
-  max-width: 48% !important;
-}
-
-@media (max-width: 768px) {
-  .layout--collection .archive__item {
-    flex: 0 0 100% !important;  /* one column on mobile */
-    max-width: 100% !important;
-  }
-}
-
-/* make excerpt text behave more like normal body text */
-.layout--collection .archive__item-excerpt {
-  max-width: 600px !important;
-  font-size: 0.9rem !important;
-  line-height: 1.5 !important;
-  white-space: normal !important;
-  overflow-wrap: break-word !important;
-}
-
-
-/* ===== Projects page layout overrides ===== */
-
-/* Force a reliable 2-column grid on desktop, 1-column on phones */
+/* 2 columns on desktop, 1 on phones */
 .layout--collection .entries-grid {
   display: grid !important;
-  grid-template-columns: repeat(2, minmax(260px, 1fr)) !important;
-  grid-column-gap: 2rem !important;
-  grid-row-gap: 2rem !important;
+  grid-template-columns: repeat(2, minmax(420px, 1fr)) !important;
+  gap: 2rem !important;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .layout--collection .entries-grid {
     grid-template-columns: 1fr !important;
   }
 }
 
-/* Let the excerpt breathe horizontally and be readable */
-.layout--collection .archive__item-excerpt {
-  max-width: 60ch !important;   /* ~600–700px of readable text */
-  font-size: 0.95rem !important;
-  line-height: 1.55 !important;
-  white-space: normal !important;
-  overflow-wrap: break-word !important;
-}
-
-/* Make teaser images scale with the card width */
-.layout--collection .archive__item-teaser img {
-  width: 100% !important;
-  height: auto !important;
-  display: block !important;
-}
-
-/* Optional: tidy card spacing a bit */
-.layout--collection .archive__item {
-  margin: 0 !important;
-}
-
-/* ===== Expand the content area on collection pages even with the sidebar ===== */
-.layout--collection .page__content {
-  max-width: 1200px !important;   /* widen the main column */
-}
-
-/* Two-up project grid so the right side isn’t empty */
-.layout--collection .entries-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(320px, 1fr)) !important;
-  grid-column-gap: 2rem !important;
-  grid-row-gap: 2rem !important;
-}
-
-@media (max-width: 768px) {
-  .layout--collection .entries-grid {
-    grid-template-columns: 1fr !important;  /* single column on phones */
-  }
-}
-
-/* Let cards stretch naturally inside the grid */
+/* Let each card fill its grid cell naturally */
 .layout--collection .archive__item {
   width: auto !important;
   margin: 0 !important;
 }
 
-/* Make teaser images scale to the new card width */
+/* Teaser images scale correctly */
 .layout--collection .archive__item-teaser img {
   width: 100% !important;
   height: auto !important;
   display: block !important;
 }
 
-/* Make excerpts readable width (not a narrow column) */
+/* Normal wrapping so text doesn’t go vertical */
+.layout--collection .archive__item,
+.layout--collection .archive__item * {
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+  hyphens: auto !important;
+}
+
+/* Readable teaser text */
 .layout--collection .archive__item-excerpt {
   max-width: 60ch !important;
   font-size: 0.95rem !important;
   line-height: 1.55 !important;
-  white-space: normal !important;
-  overflow-wrap: break-word !important;
 }
