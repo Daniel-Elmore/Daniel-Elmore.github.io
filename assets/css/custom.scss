@@ -64,3 +64,76 @@ a:hover, a:focus {
 .archive__item {
   border-color: rgba(10, 31, 68, 0.08);
 }
+
+/* =========================
+   Masthead (top nav bar)
+   ========================= */
+.masthead,
+.masthead .greedy-nav {
+  background-color: #0A1F44; /* main navy */
+}
+
+.masthead .site-title,
+.masthead .site-title a,
+.masthead .greedy-nav a,
+.masthead__menu-item > a {
+  color: #ffffff !important;
+}
+
+.masthead .greedy-nav a:hover,
+.masthead .greedy-nav a:focus,
+.masthead__menu-item > a:hover,
+.masthead__menu-item > a:focus {
+  color: #ffffff !important;
+  text-decoration: underline; /* subtle affordance */
+}
+
+/* mobile menu button + icon */
+.greedy-nav__toggle,
+.greedy-nav__toggle:hover,
+.greedy-nav__toggle:focus,
+.greedy-nav .hamburger,
+.greedy-nav .hamburger:before,
+.greedy-nav .hamburger:after {
+  color: #ffffff !important;
+  background-color: #0A1F44 !important;
+}
+
+/* =========================
+   Sidebar (author panel)
+   ========================= */
+.page__sidebar,
+.sidebar {
+  background-color: #6699CC; /* secondary blue */
+  color: #ffffff;
+}
+
+/* text + links inside sidebar */
+.sidebar,
+.sidebar a,
+.sidebar .author__name,
+.sidebar .author__bio,
+.sidebar .author__urls a,
+.sidebar .author__urls li a,
+.sidebar .author__urls-wrapper a {
+  color: #ffffff !important;
+}
+
+/* icons (Font Awesome) in sidebar */
+.sidebar i,
+.sidebar .fab,
+.sidebar .fas {
+  color: #ffffff !important;
+}
+
+/* optional: make sidebar links underline on hover for contrast */
+.sidebar a:hover,
+.sidebar .author__urls a:hover {
+  text-decoration: underline;
+}
+
+/* optional: soften the card border next to the sidebar to avoid a hard edge */
+.page {
+  border-left: 0;
+}
+
