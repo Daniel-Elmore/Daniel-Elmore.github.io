@@ -1,6 +1,6 @@
 ---
 title: "User Behavior and Citi Bike"
-excerpt: "Applying behavioral economics and data analytics to NYC’s bike share system (2016–2023), finding a statistically significant difference between subscribers and one-time customers in multiple facets."
+excerpt: "Applied behavioral economics and data analytics to NYC’s bike share system (2016–2023), finding numerous statistically significant differences."
 date: 2023-11-27
 layout: single
 author_profile: true
