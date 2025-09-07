@@ -198,3 +198,27 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 
 /* keep titles/excerpts readable */
 .archive__item-title { word-break: normal; hyphens: auto; }
+
+/* ==== Project card width + excerpt expansion ==== */
+
+/* widen the text area inside project cards */
+.archive__item-excerpt {
+  max-width: 600px;   /* lets text breathe horizontally */
+  font-size: 0.9rem;  /* restore size closer to body text */
+  line-height: 1.5;
+  white-space: normal;
+}
+
+/* ensure cards don’t collapse too narrow */
+.layout--collection .archive__item {
+  flex: 0 0 48%;      /* half width (two per row) */
+  max-width: 48%;
+}
+
+@media (max-width: 768px) {
+  .layout--collection .archive__item {
+    flex: 0 0 100%;   /* full width on small screens */
+    max-width: 100%;
+  }
+}
+
