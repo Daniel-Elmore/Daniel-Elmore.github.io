@@ -1,202 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
 
-/* Brand variables */
-$brand-main: #0A1F44;     /* dark navy */
-$brand-secondary: #6699CC;/* cornflower */
+/* ===== Brand + font vars ===== */
+$brand-main: #0A1F44;      /* dark navy */
+$brand-secondary: #6699CC; /* light blue */
 $font-serif: "EB Garamond", serif;
 $font-sans: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
-/* Base typography */
-$base-font-family: $font-serif;
-$header-font-family: $font-serif;
-
-body {
-  font-family: $base-font-family;
+/* ===== Global typography ===== */
+html, body {
+  font-family: $font-serif !important;  /* EB Garamond for body text */
   color: #222;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Headings and page titles */
 h1, h2, h3, h4, h5, h6,
-.page__title,
-.site-title {
-  font-family: $header-font-family;
+.page__title, .site-title {
+  font-family: $font-serif !important;  /* EB Garamond for headings */
   color: $brand-main;
 }
 
 /* Links */
-a {
-  color: $brand-secondary;
-  text-underline-offset: 2px;
-}
-a:hover, a:focus {
-  color: darken($brand-secondary, 12%);
-}
+a { color: $brand-secondary; text-underline-offset: 2px; }
+a:hover, a:focus { color: darken($brand-secondary, 12%); }
 
-/* Navigation + small UI text = Lato */
-.greedy-nav a,
-.masthead__menu-item > a,
-.sidebar .author__urls a,
-.page__meta,
-.taxonomy__count,
-.btn,
-.btn--primary {
-  font-family: $font-sans;
-}
-
-/* Primary buttons */
-.btn--primary {
-  background-color: $brand-main;
-  border-color: $brand-main;
-}
-.btn--primary:hover,
-.btn--primary:focus {
-  background-color: darken($brand-main, 6%);
-  border-color: darken($brand-main, 6%);
-}
-
-/* Teasers/cards: subtle border accent */
-.archive__item {
-  border-color: rgba(10, 31, 68, 0.08);
-}
-
-/* =========================
-   Masthead (top nav bar)
-   ========================= */
-.masthead,
-.masthead .greedy-nav {
-  background-color: $brand-main;
-}
-
+/* ===== Masthead (top bar) ===== */
+.masthead, .masthead .greedy-nav { background-color: $brand-main; }
 .masthead .site-title,
 .masthead .site-title a,
 .masthead .greedy-nav a,
-.masthead__menu-item > a {
-  color: #ffffff !important;
+.masthead__menu-item > a { color: #fff !important; }
+
+/* Use Lato for navigation/UI text in the header */
+.masthead, .masthead * {
+  font-family: $font-sans !important;
 }
 
-.masthead .greedy-nav a:hover,
-.masthead .greedy-nav a:focus,
-.masthead__menu-item > a:hover,
-.masthead__menu-item > a:focus {
-  color: #ffffff !important;
-  text-decoration: underline;
-}
-
-/* mobile menu button + icon */
+/* Mobile hamburger */
 .greedy-nav__toggle,
 .greedy-nav__toggle:hover,
 .greedy-nav__toggle:focus,
 .greedy-nav .hamburger,
 .greedy-nav .hamburger:before,
 .greedy-nav .hamburger:after {
-  color: #ffffff !important;
+  color: #fff !important;
   background-color: $brand-main !important;
 }
 
-/* =========================
-   Sidebar (author panel)
-   ========================= */
+/* ===== Sidebar (author panel) — no blue background ===== */
 .page__sidebar,
-.sidebar {
-  background-color: $brand-secondary;
-  color: #ffffff;
-}
-
-/* text + links inside sidebar */
-.sidebar,
-.sidebar a,
-.sidebar .author__name,
-.sidebar .author__bio,
-.sidebar .author__urls a,
-.sidebar .author__urls li a,
-.sidebar .author__urls-wrapper a {
-  color: #ffffff !important;
-}
-
-/* icons (Font Awesome) in sidebar */
-.sidebar i,
-.sidebar .fab,
-.sidebar .fas {
-  color: #ffffff !important;
-}
-
-/* optional: make sidebar links underline on hover for contrast */
-.sidebar a:hover,
-.sidebar .author__urls a:hover {
-  text-decoration: underline;
-}
-
-/* optional: soften the card border next to the sidebar to avoid a hard edge */
-.page {
-  border-left: 0;
-}
-
-/* ===== Sidebar should fill the whole left column ===== */
-.page__sidebar {
-  background-color: #6699CC;     /* full column */
-  color: #fff;
-  padding-top: 0.75rem;          /* optional breathing room */
-  padding-bottom: 0.75rem;
-}
-
-/* Make inner "author card" transparent so the column color shows through */
 .page__sidebar .sidebar {
-  background: transparent;
-  color: inherit;
+  background: transparent !important;   /* remove light blue */
   box-shadow: none;
 }
 
-/* All text/links/icons inside sidebar = white */
-.page__sidebar,
-.page__sidebar a,
-.page__sidebar .author__name,
-.page__sidebar .author__bio,
-.page__sidebar .author__urls a,
-.page__sidebar .author__urls li a,
-.page__sidebar .author__urls-wrapper a,
-.page__sidebar i,
-.page__sidebar .fab,
-.page__sidebar .fas {
+/* Sidebar fonts = EB Garamond; keep icons/links readable */
+.page__sidebar, .page__sidebar * {
+  font-family: $font-serif !important;
+  color: inherit; /* use page default colors */
+}
+
+/* ===== Buttons/UI ===== */
+.btn, .btn--primary { font-family: $font-sans; }
+.btn--primary {
+  background-color: $brand-main;
+  border-color: $brand-main;
+}
+.btn--primary:hover, .btn--primary:focus {
+  background-color: darken($brand-main, 6%);
+  border-color: darken($brand-main, 6%);
+}
+
+/* Cards/teasers subtle border */
+.archive__item { border-color: rgba(10,31,68,0.08); }
+
+/* ===== Footer ===== */
+.page__footer {
+  background: $brand-secondary;
+  color: #fff;
+  border-top: 0;
+}
+
+/* Footer text/links/icons — white; font = Lato for UI feel */
+.page__footer, .page__footer * {
   color: #fff !important;
+  font-family: $font-sans !important;
 }
-
-/* Tone down default borders/backgrounds inside the author block */
-.page__sidebar .author__urls-wrapper,
-.page__sidebar .author__content {
-  background: transparent;
-  border-color: rgba(255,255,255,0.25);
-}
-
-/* ===== Force global typography (skins sometimes override) ===== */
-html, body {
-  font-family: "EB Garamond", serif !important;
-}
-
-h1, h2, h3, h4, h5, h6,
-.page__title,
-.site-title {
-  font-family: "EB Garamond", serif !important;
-  color: #0A1F44;
-}
-
-/* Nav/UI text = Lato */
-.masthead .greedy-nav a,
-.masthead__menu-item > a,
-.greedy-nav__toggle,
-.page__meta,
-.taxonomy__count,
-.btn,
-.btn--primary,
-.sidebar .author__urls a {
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
-}
-
-/* Keep top bar + links styled */
-.masthead,
-.masthead .greedy-nav { background-color: #0A1F44; }
-.masthead .site-title,
-.masthead .site-title a,
-.masthead .greedy-nav a,
-.masthead__menu-item > a { color: #fff !important; }
+.page__footer a:hover { text-decoration: underline; }
