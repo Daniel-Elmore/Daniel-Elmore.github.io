@@ -146,26 +146,6 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 /* Hide site subtitle in the masthead if it exists */
 .masthead .site-subtitle { display: none !important; }
 
-
-/* ===== Projects grid: 2 columns on desktop/tablet, 1 on mobile ===== */
-/* Minimal Mistakes uses .entries-grid for collection cards */
-.entries-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(320px, 1fr)); /* two wide columns */
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-}
-
-@media (max-width: 768px) {
-  .entries-grid {
-    grid-template-columns: 1fr; /* single column on phones */
-  }
-}
-
-/* Make each card use space cleanly */
-.archive__item { display: flex; flex-direction: column; }
-.archive__item-title { word-break: normal; hyphens: auto; }
-
 /* ==== Mobile nav colors ==== */
 @media (max-width: 860px) {
   .masthead,
