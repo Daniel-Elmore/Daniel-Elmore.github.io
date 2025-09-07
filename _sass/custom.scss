@@ -147,17 +147,53 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 .masthead .site-subtitle { display: none !important; }
 
 
-/* ===== Projects grid layout ===== */
-/* 1 column on mobile, 2 columns on tablets/desktop */
-.entries-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-gap: 2rem; /* spacing between cards */
+/* ==== Projects grid: 2 columns desktop/tablet, 1 column mobile ==== */
+.entries-grid,
+.grid__wrapper {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
 }
 
 @media (max-width: 768px) {
-  .entries-grid {
-    grid-template-columns: 1fr; /* fallback to 1 column on smaller screens */
+  .entries-grid,
+  .grid__wrapper {
+    grid-template-columns: 1fr;
   }
 }
 
+/* Optional: make each card use space better */
+.archive__item {
+  display: flex;
+  flex-direction: column;
+}
+.archive__item-excerpt { margin-top: .35rem; }
+
+/* ==== Mobile nav colors ==== */
+@media (max-width: 860px) {
+  .masthead,
+  .masthead .greedy-nav,
+  .greedy-nav .visible-links,
+  .greedy-nav .hidden-links {
+    background-color: #0A1F44 !important; /* brand navy */
+  }
+
+  .greedy-nav a,
+  .greedy-nav .hidden-links a {
+    color: #ffffff !important;
+  }
+
+  .greedy-nav .hidden-links li {
+    border-color: rgba(255,255,255,0.15) !important; /* subtle dividers */
+  }
+
+  /* keep the toggle icon visible */
+  .greedy-nav__toggle,
+  .greedy-nav .hamburger,
+  .greedy-nav .hamburger:before,
+  .greedy-nav .hamburger:after {
+    background-color: #0A1F44 !important;
+    color: #ffffff !important;
+  }
+}
