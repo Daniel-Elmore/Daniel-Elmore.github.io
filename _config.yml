@@ -32,7 +32,7 @@ repository: "Daniel-Elmore/Daniel-Elmore.github.io"
 # Branding assets (optional)
 teaser:                 # e.g., "/assets/images/500x300.png"
 logo:                   # e.g., "/assets/images/logo.png"
-masthead_title: " "     # single space hides duplicate title in masthead
+masthead_title: "Daniel Elmore's Portfolio"     # single space hides duplicate title in masthead
 
 # UX
 breadcrumbs:            # true/false
@@ -95,9 +95,9 @@ analytics:
 # Site Author (appears in sidebar on layouts with author_profile: true)
 # ---------------------------------
 author:
-  name: "Daniel Elmore"
+  name: "About Me"
   avatar:               # e.g., "/assets/images/daniel.jpg"
-  bio: "Economist and data strategist applying SQL, Python, and econometrics to translate complex datasets into decision-ready insights that expose trade-offs, incentives, and performance drivers."
+  bio: "Hello and welcome to my portfolio! I am am economist and data strategist applying SQL, Python, and econometrics to translate complex datasets into decision-ready insights that expose trade-offs, incentives, and performance drivers."
   location: "Taylorsville, NC"
   email: "danieljosephelmore@gmail.com"
   links:
