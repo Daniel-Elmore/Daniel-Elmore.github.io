@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
 
-/* ===== Brand ===== */
-$brand-main: #0A1F44;      /* navy */
-$brand-secondary: #6699CC; /* light blue */
+/* ============ Brand ============ */
+$brand-main: #0A1F44;      /* dark navy */
+$brand-secondary: #6699CC; /* light/cornflower blue */
 $font-serif: "EB Garamond", serif;
 $font-sans: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
-/* ===== Base type & colors ===== */
+/* ============ Global Typography ============ */
 html, body {
   font-family: $font-serif !important;
   color: #222;
@@ -25,8 +25,10 @@ h1, h2, h3, h4, h5, h6,
 a { color: $brand-secondary; text-underline-offset: 2px; }
 a:hover, a:focus { color: darken($brand-secondary, 12%); }
 
+/* Small UI text / nav uses Lato */
+.page__meta, .taxonomy__count, .btn, .btn--primary { font-family: $font-sans !important; }
+
 /* Buttons */
-.btn, .btn--primary { font-family: $font-sans; }
 .btn--primary {
   background-color: $brand-main; border-color: $brand-main;
 }
@@ -34,123 +36,72 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   background-color: darken($brand-main, 6%); border-color: darken($brand-main, 6%);
 }
 
-/* Card borders a touch cooler */
+/* Subtle card border */
 .archive__item { border-color: rgba(10,31,68,0.08); }
 
-/* ===== Masthead (top nav) ===== */
+/* ============ Masthead (top nav bar) ============ */
 .masthead, .masthead .greedy-nav { background-color: $brand-main; }
-.masthead, .masthead * { font-family: $font-sans !important; }
+
 .masthead .site-title,
 .masthead .site-title a,
 .masthead .greedy-nav a,
-.masthead__menu-item > a { color: #fff !important; }
-.masthead .greedy-nav a:hover,
-.masthead .greedy-nav a:focus,
-.masthead__menu-item > a:hover,
-.masthead__menu-item > a:focus { color: #fff !important; text-decoration: underline; }
-.greedy-nav__toggle,
-.greedy-nav__toggle:hover,
-.greedy-nav__toggle:focus,
-.greedy-nav .hamburger,
-.greedy-nav .hamburger:before,
-.greedy-nav .hamburger:after { color:#fff !important; background-color:$brand-main !important; }
-
-/* ===== Sidebar (left column) ===== */
-/* On wide layouts, paint a full-height light-blue stripe behind content */
-@media (min-width: 64em) {
-  .page {
-    background: linear-gradient(90deg,
-      $brand-secondary 0,
-      $brand-secondary 22rem,  /* ~sidebar width */
-      #ffffff 22rem,
-      #ffffff 100%);
-  }
-}
-/* Make the actual sidebar card transparent so the stripe shows through */
-.page__sidebar, .page__sidebar .sidebar {
-  background: transparent !important;
-  box-shadow: none;
-}
-/* Sidebar typography + colors */
-.page__sidebar, .page__sidebar * { color: #fff !important; }
-.page__sidebar { padding-top: .75rem; padding-bottom: .75rem; }
-.page__sidebar .author__urls-wrapper,
-.page__sidebar .author__content { background: transparent; border-color: rgba(255,255,255,.25); }
-
-/* Use Lato for UI-ish text where appropriate */
-.masthead .greedy-nav a,
-.masthead__menu-item > a,
-.greedy-nav__toggle,
-.page__meta,
-.taxonomy__count,
-.sidebar .author__urls a { font-family: $font-sans !important; }
-
-/* ========== FORCE MASTHEAD FONTS/COLORS EVERYWHERE ========== */
-.masthead,
-.masthead .greedy-nav {
-  background-color: #0A1F44;
-}
-.masthead .site-title,
-.masthead .site-title a,
-.masthead .greedy-nav a,
-.masthead__menu-item > a,
-.greedy-nav__toggle {
+.masthead__menu-item > a {
   color: #fff !important;
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+  font-family: $font-sans !important; /* nav in Lato */
 }
+
 .masthead .greedy-nav a:hover,
-.masthead__menu-item > a:hover,
 .masthead .greedy-nav a:focus,
+.masthead__menu-item > a:hover,
 .masthead__menu-item > a:focus {
   color: #fff !important;
   text-decoration: underline;
 }
 
-/* ========== FULL-HEIGHT LIGHT-BLUE LEFT STRIPE (ALL TWO-COLUMN LAYOUTS) ========== */
-/* Minimal Mistakes uses `.page` for single pages and `.archive` for collections. */
+/* Mobile menu icon */
+.greedy-nav__toggle,
+.greedy-nav__toggle:hover,
+.greedy-nav__toggle:focus,
+.greedy-nav .hamburger,
+.greedy-nav .hamburger:before,
+.greedy-nav .hamburger:after {
+  color: #fff !important; background-color: $brand-main !important;
+}
+
+/* ============ Sidebar (left column) ============ */
+/* On wide layouts, paint a full-height blue stripe behind the content */
 @media (min-width: 64em) {
-  .page,
-  .archive {
-    /* 22rem ≈ sidebar width; adjust if you widen the sidebar later */
-    background: linear-gradient(90deg, #6699CC 0, #6699CC 22rem, #ffffff 22rem, #ffffff 100%);
-  }
-
-  /* Make the actual sidebar card transparent so the stripe shows through */
-  .page__sidebar,
-  .sidebar {
-    background: transparent !important;
-    box-shadow: none;
-  }
-
-  /* Ensure all sidebar text/icons are white for contrast */
-  .page__sidebar *,
-  .sidebar * {
-    color: #ffffff !important;
+  .page {
+    background: linear-gradient(
+      90deg,
+      $brand-secondary 0,
+      $brand-secondary 22rem,   /* ~sidebar width */
+      #ffffff 22rem,
+      #ffffff 100%
+    );
   }
 }
 
-/* ========== TYPOGRAPHY ENFORCERS ========== */
-/* Body + headings = EB Garamond; keep Lato for UI elements */
-html, body,
-h1, h2, h3, h4, h5, h6,
-.page__title, .site-title {
-  font-family: "EB Garamond", serif !important;
-}
-.page__meta, .taxonomy__count, .btn, .btn--primary,
-.sidebar .author__urls a {
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+/* Make the actual sidebar box transparent so the stripe shows through */
+.page__sidebar,
+.page__sidebar .sidebar {
+  background: transparent !important;
+  box-shadow: none;
 }
 
-/* ========== FOOTER: LIGHT BLUE WITH WHITE TEXT/links ========== */
-.page__footer {
-  background: #6699CC;
-  color: #ffffff;
-}
-.page__footer * {
-  color: #ffffff !important;
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
-}
-.page__footer a:hover {
-  text-decoration: underline;
+/* Sidebar text/links/icons = white; typography = EB Garamond (or switch to $font-sans if you prefer) */
+.page__sidebar,
+.page__sidebar * {
+  color: #fff !important;
+  font-family: $font-serif !important;
 }
 
+/* Tidy borders in the author block on blue */
+.page__sidebar .author__urls-wrapper,
+.page__sidebar .author__content {
+  background: transparent;
+  border-color: rgba(255,255,255,0.25);
+}
+
+/* Remove the thin left border between sidebar and content */
+.page { border-left: 0; }
