@@ -95,7 +95,7 @@ analytics:
 # ---------------------------------
 author:
   name: "About Me"
-  avatar:               # e.g., "/assets/images/daniel.jpg"
+  avatar: "assets/images/projects/Headshot 2.JPG"              # e.g., "/assets/images/daniel.jpg"
   bio: "Hello and welcome to my portfolio! I am am economist and data strategist applying SQL, Python, and econometrics to translate complex datasets into decision-ready insights that expose trade-offs, incentives, and performance drivers."
   location: "Taylorsville, NC"
   email: "danieljosephelmore@gmail.com"
