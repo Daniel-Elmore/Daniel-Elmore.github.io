@@ -20,6 +20,18 @@ h1, h2, h3, h4, h5, h6,
   color: $brand-main;
 }
 
+/* Project card title = Garamond, excerpt = Lato */
+.archive__item-title {
+  font-family: "EB Garamond", serif !important;
+}
+
+.archive__item-excerpt {
+  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
 /* Links */
 a { color: $brand-secondary; text-underline-offset: 2px; }
 a:hover, a:focus { color: darken($brand-secondary, 12%); }
