@@ -33,13 +33,13 @@ Payroll is often treated as a proxy for competitive strength, but money alone is
 - **Trend:** ROI gaps narrowed by 2015–2016, but mainly because payroll inflation compressed outcomes toward the mean—not because teams became more efficient.
 
 ## Visuals
-![Payroll growth vs. WAR growth (2012–2016)](/assets/images/projects/mlb-roi-payroll-vs-war.png)  
+![](/assets/images/projects/slide06_payroll_vs_war_indexed.png)
 *League payroll rose +28% while WAR rose only +4%, widening the efficiency gap.*
 
-![ROI contrast: Rays & A’s vs. Yankees & Dodgers](/assets/images/projects/mlb-roi-big-vs-small.png)  
+![](/assets/images/projects/slide09_high_spending.png)
 *Rays and A’s turned <$80M payrolls into 30–40 WAR seasons, while Yankees and Dodgers spent $200M+ for similar results.*
 
-![ROI by position group (2012–2016)](/assets/images/projects/mlb-roi-by-position.png)  
+![](/assets/images/projects/slide23_war_per_m_by_role_yearly.png)
 *Hitters delivered consistently higher ROI (~0.04 WAR/$1M more than pitchers), exposing systemic overvaluation of arms.*
 
 ## Business Takeaways
@@ -55,7 +55,7 @@ Payroll is often treated as a proxy for competitive strength, but money alone is
 ## How to Reproduce
 Clone: `git clone https://github.com/Daniel-Elmore/Are-MLB-Teams-Spending-Smarter.git`  
 Load the SQL schema from `/Data/SQL/` into PostgreSQL  
-- This creates the relational structure (players, salaries, teams, WAR, appearances).  
+This creates the relational structure (players, salaries, teams, WAR, appearances).  
 Import the Lahman CSVs and Neil Paine WAR dataset into the schema.  
 Open `01_sql_to_pandas.ipynb` in Jupyter to run SQL queries and pull cleaned tables into pandas.  
 Explore `02_exploratory_data_analysis.html` for descriptive findings.  
