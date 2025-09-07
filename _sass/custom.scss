@@ -123,3 +123,5 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   color: #ffffff !important;
 }
 
+/* Hide site subtitle in the masthead if it exists */
+.masthead .site-subtitle { display: none !important; }
