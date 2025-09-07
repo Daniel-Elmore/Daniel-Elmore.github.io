@@ -4,7 +4,7 @@ excerpt: "SQL + Python case study showing payroll explained only ~12% of wins an
 layout: single
 author_profile: true
 toc: true
-date: 2025-09-05
+date: 2025-09-06
 ---
 
 ## Overview
