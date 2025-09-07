@@ -18,9 +18,8 @@ locale: "en-US"
 rtl:     # true/false; keep empty for LTR
 
 # Masthead & metadata
-title: "Daniel Elmore Portfolio"
+title: "Daniel Elmore's Portfolio"
 title_separator: "-"
-subtitle: "Data Analysis, Economics, and Strategy Projects"
 name: "Daniel Elmore"
 description: "Data & Strategy Consultant | Economics Graduate Student"
 
