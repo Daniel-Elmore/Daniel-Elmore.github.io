@@ -84,3 +84,73 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 .page__meta,
 .taxonomy__count,
 .sidebar .author__urls a { font-family: $font-sans !important; }
+
+/* ========== FORCE MASTHEAD FONTS/COLORS EVERYWHERE ========== */
+.masthead,
+.masthead .greedy-nav {
+  background-color: #0A1F44;
+}
+.masthead .site-title,
+.masthead .site-title a,
+.masthead .greedy-nav a,
+.masthead__menu-item > a,
+.greedy-nav__toggle {
+  color: #fff !important;
+  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+}
+.masthead .greedy-nav a:hover,
+.masthead__menu-item > a:hover,
+.masthead .greedy-nav a:focus,
+.masthead__menu-item > a:focus {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+/* ========== FULL-HEIGHT LIGHT-BLUE LEFT STRIPE (ALL TWO-COLUMN LAYOUTS) ========== */
+/* Minimal Mistakes uses `.page` for single pages and `.archive` for collections. */
+@media (min-width: 64em) {
+  .page,
+  .archive {
+    /* 22rem ≈ sidebar width; adjust if you widen the sidebar later */
+    background: linear-gradient(90deg, #6699CC 0, #6699CC 22rem, #ffffff 22rem, #ffffff 100%);
+  }
+
+  /* Make the actual sidebar card transparent so the stripe shows through */
+  .page__sidebar,
+  .sidebar {
+    background: transparent !important;
+    box-shadow: none;
+  }
+
+  /* Ensure all sidebar text/icons are white for contrast */
+  .page__sidebar *,
+  .sidebar * {
+    color: #ffffff !important;
+  }
+}
+
+/* ========== TYPOGRAPHY ENFORCERS ========== */
+/* Body + headings = EB Garamond; keep Lato for UI elements */
+html, body,
+h1, h2, h3, h4, h5, h6,
+.page__title, .site-title {
+  font-family: "EB Garamond", serif !important;
+}
+.page__meta, .taxonomy__count, .btn, .btn--primary,
+.sidebar .author__urls a {
+  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+}
+
+/* ========== FOOTER: LIGHT BLUE WITH WHITE TEXT/links ========== */
+.page__footer {
+  background: #6699CC;
+  color: #ffffff;
+}
+.page__footer * {
+  color: #ffffff !important;
+  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+}
+.page__footer a:hover {
+  text-decoration: underline;
+}
+
