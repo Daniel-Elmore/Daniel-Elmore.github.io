@@ -1,6 +1,6 @@
 ---
 title: "Are MLB Teams Spending Smarter? (2012–2016)"
-excerpt: "Produced a Moneyball-inspired ROI case study using SQL + Python to highlight how disciplined allocation can outpace financial scale, with lessons transferable to corporate strategy."
+excerpt: "Produced a Moneyball-inspired ROI case study using SQL + Python to highlight how disciplined allocation can outpace financial scale."
 layout: single
 author_profile: true
 toc: true
