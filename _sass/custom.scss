@@ -21,12 +21,9 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* Project card title = Garamond, excerpt = Lato */
-.archive__item-title {
-  font-family: "EB Garamond", serif !important;
-}
-
+.archive__item-title { font-family: $font-serif !important; }
 .archive__item-excerpt {
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+  font-family: $font-sans !important;
   font-size: 0.95rem;
   line-height: 1.55;
 }
@@ -48,7 +45,7 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 /* Larger site title */
 .masthead .site-title,
 .masthead .site-title a {
-  font-family: "EB Garamond", serif !important;
+  font-family: $font-serif !important;
   font-size: 1.5rem !important;
   font-weight: 700;
   color: #ffffff !important;
@@ -96,19 +93,16 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 
 /* ===== Buttons/UI ===== */
 .btn, .btn--primary { font-family: $font-sans; }
-.btn--primary {
-  background-color: $brand-main;
-  border-color: $brand-main;
-}
+.btn--primary { background-color: $brand-main; border-color: $brand-main; }
 .btn--primary:hover, .btn--primary:focus {
   background-color: darken($brand-main, 6%);
   border-color: darken($brand-main, 6%);
 }
 
-/* Cards/teasers subtle border */
+/* Card border */
 .archive__item { border-color: rgba(10,31,68,0.08); }
 
-/* ===== Footer (blue background, Lato text, icons fixed) ===== */
+/* ===== Footer ===== */
 .page__footer {
   background: $brand-secondary;
   color: #fff;
@@ -127,46 +121,30 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 }
 .page__footer a { color: #fff; }
 .page__footer a:hover { text-decoration: underline; }
-/* Restore icon fonts */
 .page__footer i,
 .page__footer .fas,
-.page__footer .far {
-  font-family: "Font Awesome 5 Free" !important;
-  font-weight: 900;
-  color: #fff;
-}
-.page__footer .fab {
-  font-family: "Font Awesome 5 Brands" !important;
-  font-weight: 400;
-  color: #fff;
-}
+.page__footer .far { font-family: "Font Awesome 5 Free" !important; font-weight: 900; color: #fff; }
+.page__footer .fab { font-family: "Font Awesome 5 Brands" !important; font-weight: 400; color: #fff; }
 
 /* =======================
-   PROJECTS PAGE (CLEAN)
+   PROJECTS PAGE (SAFE GRID)
    ======================= */
 
 /* Widen the content area beside the sidebar */
-.layout--collection .page__content {
-  max-width: 1200px !important;
-}
+.layout--collection .page__content { max-width: 1200px !important; }
 
 /* 2 columns on desktop, 1 on phones */
 .layout--collection .entries-grid {
   display: grid !important;
-  grid-template-columns: repeat(2, minmax(420px, 1fr)) !important;
+  grid-template-columns: repeat(2, minmax(320px, 1fr)) !important;
   gap: 2rem !important;
 }
-@media (max-width: 1024px) {
-  .layout--collection .entries-grid {
-    grid-template-columns: 1fr !important;
-  }
+@media (max-width: 900px) {
+  .layout--collection .entries-grid { grid-template-columns: 1fr !important; }
 }
 
 /* Let each card fill its grid cell naturally */
-.layout--collection .archive__item {
-  width: auto !important;
-  margin: 0 !important;
-}
+.layout--collection .archive__item { width: auto !important; margin: 0 !important; }
 
 /* Teaser images scale correctly */
 .layout--collection .archive__item-teaser img {
@@ -178,15 +156,8 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 /* Normal wrapping so text doesn’t go vertical */
 .layout--collection .archive__item,
 .layout--collection .archive__item * {
+  white-space: normal !important;
   word-break: normal !important;
   overflow-wrap: break-word !important;
-  white-space: normal !important;
   hyphens: auto !important;
-}
-
-/* Readable teaser text */
-.layout--collection .archive__item-excerpt {
-  max-width: 60ch !important;
-  font-size: 0.95rem !important;
-  line-height: 1.55 !important;
 }
