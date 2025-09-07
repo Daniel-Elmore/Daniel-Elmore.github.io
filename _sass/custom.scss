@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6,
 
 .archive__item-excerpt {
   font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   line-height: 1.5;
 }
 
@@ -145,3 +145,19 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 
 /* Hide site subtitle in the masthead if it exists */
 .masthead .site-subtitle { display: none !important; }
+
+
+/* ===== Projects grid layout ===== */
+/* 1 column on mobile, 2 columns on tablets/desktop */
+.entries-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-gap: 2rem; /* spacing between cards */
+}
+
+@media (max-width: 768px) {
+  .entries-grid {
+    grid-template-columns: 1fr; /* fallback to 1 column on smaller screens */
+  }
+}
+
