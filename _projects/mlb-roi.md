@@ -1,6 +1,6 @@
 ---
 title: "Are MLB Teams Spending Smarter? (2012–2016)"
-excerpt: "SQL + Python case study showing payroll explained only ~12% of wins and efficiency gaps of 10+ wins between teams."
+excerpt: "Produced a Moneyball-inspired ROI case study using SQL + Python to highlight how disciplined allocation can outpace financial scale, with lessons transferable to corporate strategy."
 layout: single
 author_profile: true
 toc: true
