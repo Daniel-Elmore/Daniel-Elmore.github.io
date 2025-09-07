@@ -36,7 +36,7 @@ Payroll is often treated as a proxy for competitive strength, but money alone is
 ![](/assets/images/projects/slide06_payroll_vs_war_indexed.png)
 *League payroll rose +28% while WAR rose only +4%, widening the efficiency gap.*
 
-![](/assets/images/projects/slide09_high_spending.png)
+![](/assets/images/projects/slide09_payroll_vs_war_scatter.png)
 *Rays and A’s turned <$80M payrolls into 30–40 WAR seasons, while Yankees and Dodgers spent $200M+ for similar results.*
 
 ![](/assets/images/projects/slide23_war_per_m_by_role_yearly.png)
