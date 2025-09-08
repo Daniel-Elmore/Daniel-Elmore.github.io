@@ -293,34 +293,3 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   font-size: 0.75rem !important;
   line-height: 1.5 !important;
 }
-
-/* === PROJECTS: hard-center the whole content column === */
-/* Hit every wrapper that can carry width/offset on MM collection pages */
-.projects-list .page,
-.projects-list .page__content,
-.projects-list .page__inner-wrap,
-.projects-list .archive {
-  max-width: 1000px !important;      /* adjust 940–1100px to taste */
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 1rem !important;     /* even gutters */
-  padding-right: 1rem !important;
-  box-sizing: border-box !important;
-}
-
-/* Keep each item constrained inside that centered column */
-.projects-list .archive__item {
-  max-width: 1000px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-bottom: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
-  border-bottom: 1px solid rgba(#0A1F44, 0.15) !important;
-  text-align: left !important;
-}
-
-/* Smaller excerpt on Projects only */
-.projects-list .archive__item-excerpt {
-  font-size: 0.85rem !important;
-  line-height: 1.5 !important;
-}
