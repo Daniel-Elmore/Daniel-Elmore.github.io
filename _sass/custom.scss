@@ -132,7 +132,7 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
    ========================================= */
 .projects-list .archive__item {
   max-width: 960px;
-  margin: 0 auto 1.25rem;               /* spacing between items */
+  margin: 0 auto .25rem;               /* spacing between items */
   border-bottom: 1px solid rgba(#0A1F44, 0.15);
 }
 
