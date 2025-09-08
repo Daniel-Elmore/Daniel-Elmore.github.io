@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6,
   color: $brand-main;
 }
 
-/* Project titles = Garamond, excerpts = Lato */
+/* Project card title = Garamond, excerpt = Lato */
 .archive__item-title { font-family: $font-serif !important; }
 .archive__item-excerpt {
   font-family: $font-sans !important;
@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.55;
 }
 
-/* ===== Links ===== */
+/* Links */
 a { color: $brand-secondary; text-underline-offset: 2px; }
 a:hover, a:focus { color: darken($brand-secondary, 12%); }
 
@@ -65,7 +65,7 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   background-color: $brand-main !important;
 }
 
-/* Mobile nav colors */
+/* ==== Mobile nav colors ==== */
 @media (max-width: 860px) {
   .masthead,
   .masthead .greedy-nav,
@@ -78,7 +78,7 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   .greedy-nav .hidden-links li { border-color: rgba(255,255,255,0.15) !important; }
 }
 
-/* ===== Sidebar (author panel) — transparent ===== */
+/* ===== Sidebar (author panel) — no blue background ===== */
 .page__sidebar,
 .page__sidebar .sidebar {
   background: transparent !important;
@@ -126,19 +126,25 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 .page__footer .far { font-family: "Font Awesome 5 Free" !important; font-weight: 900; color: #fff; }
 .page__footer .fab { font-family: "Font Awesome 5 Brands" !important; font-weight: 400; color: #fff; }
 
-/* =========================================================
-   PROJECTS PAGE — list layout (scoped to /projects/ only)
-   Add `classes: wide projects-list` in projects.md front matter
-   ========================================================= */
+/* =========================================
+   Projects page — list layout (scoped only)
+   Add `classes: wide projects-list` in projects.md
+   ========================================= */
 .projects-list .archive__item {
   max-width: 960px;
-  margin: 0 auto 1.25rem;               /* spacing between entries */
+  margin: 0 auto 1.25rem;               /* spacing between items */
   border-bottom: 1px solid rgba(#0A1F44, 0.15);
 }
-.projects-list .archive__item-title { margin-bottom: 0.25rem; }
-.projects-list .archive__item-excerpt { margin-bottom: 0; }
 
-/* Left thumbnail column, consistent 3:2 */
+.projects-list .archive__item-title {    /* tighten title → excerpt */
+  margin-bottom: 0.25rem;
+}
+
+.projects-list .archive__item-excerpt {  /* no gap before divider */
+  margin-bottom: 0;
+}
+
+/* Left thumbnail, consistent 3:2 (requires each project front matter to set `teaser:`) */
 .projects-list .archive__item-teaser {
   flex: 0 0 300px;
   margin-right: 1.25rem;
@@ -155,4 +161,7 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 }
 
 /* Text column */
-.projects-list .archive__item-body { flex: 1; min-width: 0; }
+.projects-list .archive__item-body {
+  flex: 1;
+  min-width: 0;
+}
