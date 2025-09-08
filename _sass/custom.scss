@@ -391,47 +391,52 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   .projects-list .archive__item-teaser { aspect-ratio: 3 / 2; }
 }
 
-
 /* ===============================
-   Project pages: tighten headings and body text
+   PROJECT PAGES (single layout)
    =============================== */
 
-/* Page title */
+/* Bigger page title */
 .layout--single .page__title {
   font-size: 2.2rem !important;
   line-height: 1.2 !important;
-  margin-bottom: 0.5rem !important; /* reduce space under the title */
+  margin-bottom: 0.5rem !important;
   font-weight: 700 !important;
 }
 
-/* Section headings */
-.layout--single .page__content h2,
-.layout--single .page__content h3,
-.layout--single .page__content h4 {
-  margin-top: 1rem !important;       /* smaller gap above */
-  margin-bottom: 0.05rem !important;  /* very small gap below */
+/* Section headings (content) */
+.layout--single .page__content h2 {
+  font-size: 1.6rem !important;   /* clearly larger than body */
   line-height: 1.25 !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.15rem !important;   /* very tight under the head */
+}
+.layout--single .page__content h3 {
+  font-size: 1.35rem !important;
+  line-height: 1.25 !important;
+  margin-top: 0.9rem !important;
+  margin-bottom: 0.12rem !important;
+}
+.layout--single .page__content h4 {
+  font-size: 1.15rem !important;
+  line-height: 1.25 !important;
+  margin-top: 0.8rem !important;
+  margin-bottom: 0.1rem !important;
 }
 
-/* Paragraphs and lists directly after headings */
-.layout--single .page__content h2 + p,
-.layout--single .page__content h3 + p,
-.layout--single .page__content h4 + p,
-.layout--single .page__content h2 + ul,
-.layout--single .page__content h3 + ul,
-.layout--single .page__content h4 + ul {
-  margin-top: 0.1rem !important;  /* basically flush */
+/* Body text (Lato) — smaller on project pages only */
+.layout--single .page__content,
+.layout--single .page__content p,
+.layout--single .page__content li,
+.layout--single .page__content blockquote,
+.layout--single .page__content dd {
+  font-family: $font-sans !important;   /* Lato */
+  font-size: 0.9rem !important;         /* try 0.85–0.95rem */
+  line-height: 1.45 !important;
 }
 
-
-/* ===============================
-   Project pages: smaller body text
-   =============================== */
-.layout--single.projects .page__content,
-.layout--single.projects .page__content p,
-.layout--single.projects .page__content li,
-.layout--single.projects .page__content blockquote {
-  font-size: 0.8rem !important;   /* try 0.85–0.95rem to taste */
-  line-height: 1.45 !important;   /* keep it readable */
-  font-family: $font-sans !important;  /* Lato */
+/* Kill the theme’s extra gap after headings */
+.layout--single .page__content h2 + *,
+.layout--single .page__content h3 + *,
+.layout--single .page__content h4 + * {
+  margin-top: 0 !important;
 }
