@@ -246,8 +246,8 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 /* Projects page — list layout only */
 .projects-list .archive__item {
   max-width: 960px;
-  margin: 0 auto 2.5rem;
-  padding-bottom: .25rem;
+  margin: 0 auto 1.5rem;           /* reduce spacing between items */
+  padding-bottom: 0.75rem;         /* just enough for breathing room */
   border-bottom: 1px solid rgba(#0A1F44, 0.15);
 }
 
