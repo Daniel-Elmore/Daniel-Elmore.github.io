@@ -5,7 +5,11 @@ layout: single
 author_profile: true
 toc: true
 date: 2025-09-06
-teaser: "/assets/images/projects/mlb-roi-hero.png"
+image:
+  path: /assets/images/projects/mlb-roi-hero.png   # used by archives
+  thumbnail: /assets/images/projects/mlb-roi-hero.png
+teaser: /assets/images/projects/mlb-roi-hero.png    # belt-and-suspenders
+
 header:
   teaser: "/assets/images/projects/mlb-roi-hero.png"
 ---
