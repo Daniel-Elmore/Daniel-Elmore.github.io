@@ -392,47 +392,33 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 }
 
 
-
 /* ===============================
-   Project pages: tuned title + section headings
+   Project pages: tighten headings and body text
    =============================== */
 
-/* Page title at top of each project */
+/* Page title */
 .layout--single .page__title {
-  font-size: 2rem !important;
+  font-size: 2.2rem !important;
   line-height: 1.2 !important;
-  margin-bottom: 0.5rem !important;  /* tighter gap under title */
-  font-weight: 700 !important;       /* bold for emphasis */
+  margin-bottom: 0.5rem !important; /* reduce space under the title */
+  font-weight: 700 !important;
 }
 
-/* Section headings inside project content */
-.layout--single .page__content h2 {
-  font-size: 1.45rem !important;
-  line-height: 1.25 !important;
-  margin-top: 1rem !important;        /* less gap above */
-  margin-bottom: 0.15rem !important;  /* very tight under heading */
-  font-weight: 600 !important;
-}
-
-.layout--single .page__content h3 {
-  font-size: 1.25rem !important;
-  line-height: 1.25 !important;
-  margin-top: 0.85rem !important;
-  margin-bottom: 0.1rem !important;
-  font-weight: 600 !important;
-}
-
+/* Section headings */
+.layout--single .page__content h2,
+.layout--single .page__content h3,
 .layout--single .page__content h4 {
-  font-size: 1.1rem !important;
+  margin-top: 1rem !important;       /* smaller gap above */
+  margin-bottom: 0.2rem !important;  /* very small gap below */
   line-height: 1.25 !important;
-  margin-top: 0.7rem !important;
-  margin-bottom: 0.1rem !important;
-  font-weight: 600 !important;
 }
 
-/* Kill extra paragraph spacing directly after headings */
+/* Paragraphs and lists directly after headings */
 .layout--single .page__content h2 + p,
 .layout--single .page__content h3 + p,
-.layout--single .page__content h4 + p {
-  margin-top: 0 !important;
+.layout--single .page__content h4 + p,
+.layout--single .page__content h2 + ul,
+.layout--single .page__content h3 + ul,
+.layout--single .page__content h4 + ul {
+  margin-top: 0.1rem !important;  /* basically flush */
 }
