@@ -224,3 +224,35 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   border-bottom: 1px solid rgba(#0A1F44, 0.15);
   text-align: left;
 }
+
+/* === Projects page: center the content column and tune type === */
+
+/* Center the page content area itself (so left/right whitespace is even) */
+.projects-list .page__content {
+  max-width: 1000px;        /* adjust to taste: 920–1100px works well */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;       /* safe gutters */
+  padding-right: 1rem;
+}
+
+/* Keep each item inside that centered column; keep tight spacing */
+.projects-list .archive__item {
+  max-width: 960px;         /* stays a touch narrower than the content area */
+  margin: 0 auto 0.5rem;    /* centered; small gap under each item */
+  padding-bottom: 0.5rem;   /* small space above divider */
+  border-bottom: 1px solid rgba(#0A1F44, 0.15);
+  text-align: left;         /* do NOT center paragraph text */
+}
+
+/* Make the Lato excerpt a bit smaller on this page only */
+.projects-list .archive__item-excerpt {
+  font-size: 0.9rem !important;   /* was 0.95rem globally */
+  line-height: 1.5;
+  margin: 0.25rem 0 0;
+}
+
+/* Keep the title tight to the excerpt */
+.projects-list .archive__item-title {
+  margin: 0 0 0.25rem;
+}
