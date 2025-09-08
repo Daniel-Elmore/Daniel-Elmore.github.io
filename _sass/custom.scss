@@ -262,8 +262,8 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   max-width: 1000px !important;   /* tweak 920–1100px if you want */
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0rem;
+  padding-right: 2rem;
 }
 
 /* Undo the earlier flex on page__content so it doesn't interfere */
