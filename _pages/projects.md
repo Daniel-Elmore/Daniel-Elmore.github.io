@@ -5,7 +5,7 @@ layout: collection
 collection: projects
 entries_layout: grid
 author_profile: false
-classes: wide
+classes: wide projects-grid-3
 sort_by: date
 sort_order: reverse
 ---
