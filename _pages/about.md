@@ -2,7 +2,7 @@
 title: "About"
 permalink: /about/
 layout: single
-author_profile: true
+author_profile: false
 ---
 
 Anchored in economic reasoning, my approach to data analysis goes beyond reporting metrics to uncover the institutional and behavioral dynamics that shape results. I connect statistical outcomes to the incentives, trade-offs, and second-order effects that drive organizational performance.
