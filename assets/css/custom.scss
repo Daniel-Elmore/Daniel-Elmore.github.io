@@ -169,3 +169,11 @@ a:hover, a:focus {
 .projects-list .archive__item-title { margin: 0.25rem 0 0.35rem; }
 .projects-list .archive__item-excerpt { margin-top: 0.35rem; }
 
+/* ===== Override page header title color ===== */
+.page__header {
+  --muted-text-color: #0A1F44 !important; /* reset the CSS variable */
+}
+
+.page__header .page__title {
+  color: #0A1F44 !important; /* explicit fallback */
+}
