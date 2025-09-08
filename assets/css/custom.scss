@@ -222,13 +222,17 @@ a:hover, a:focus {
   color: #0A1F44 !important;
 }
 
+/* About page only: hide the theme's header */
+.about-page .page__header { display: none !important; }
 
-/* Make single-page header titles navy, reliably */
-.page__header { --muted-text-color: #0A1F44 !important; }
-.page__header .page__title,
-.page__header [itemprop="headline"] { color: #0A1F44 !important; }
+/* Style the manual H1 to match your brand */
+.about-page .page__content > h1:first-child {
+  color: #0A1F44 !important;
+  font-family: "EB Garamond", serif;
+  margin-top: 0;
+}
 
-/* About page: Lato for the paragraph content only */
+/* Lato for the text under the heading */
 .about-page .page__content {
   font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
   font-size: 1rem;
