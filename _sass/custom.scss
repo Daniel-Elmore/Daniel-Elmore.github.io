@@ -433,3 +433,14 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 .layout--single .page__content h4 + * {
   margin-top: 0.25rem !important;       /* subtle gap under the underline */
 }
+
+/* Body text (Lato) — smaller on project pages only */
+.layout--single .page__content,
+.layout--single .page__content p,
+.layout--single .page__content li,
+.layout--single .page__content blockquote,
+.layout--single .page__content dd {
+  font-family: $font-sans !important;   /* Lato */
+  font-size: 0.8rem !important;         /* smaller than global */
+  line-height: 1.45 !important;
+}
