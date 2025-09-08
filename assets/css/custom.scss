@@ -178,10 +178,6 @@ a:hover, a:focus {
   color: #0A1F44 !important; /* explicit fallback */
 }
 
-body {
-  font-family: $base-font-family; // Garamond
-}
-
 /* Use Lato for page body content */
 .page__content {
   font-family: $font-sans !important; /* Lato */
@@ -191,4 +187,15 @@ body {
 
 :root {
   --muted-text-color: #0A1F44 !important;
+}
+
+/* ===== Force heading colors (fixes About title) ===== */
+:root {
+  --muted-text-color: #0A1F44 !important;
+  --heading-color: #0A1F44 !important;
+}
+
+.page__header .page__title,
+.page__title {
+  color: #0A1F44 !important;
 }
