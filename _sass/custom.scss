@@ -422,3 +422,16 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 .layout--single .page__content h4 + ul {
   margin-top: 0.1rem !important;  /* basically flush */
 }
+
+
+/* ===============================
+   Project pages: smaller body text
+   =============================== */
+.layout--single.projects .page__content,
+.layout--single.projects .page__content p,
+.layout--single.projects .page__content li,
+.layout--single.projects .page__content blockquote {
+  font-size: 0.9rem !important;   /* try 0.85–0.95rem to taste */
+  line-height: 1.45 !important;   /* keep it readable */
+  font-family: $font-sans !important;  /* Lato */
+}
