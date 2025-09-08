@@ -199,3 +199,15 @@ a:hover, a:focus {
 .page__title {
   color: #0A1F44 !important;
 }
+
+
+/* About page: force navy title + Lato body */
+.about-page .page__header { --muted-text-color: #0A1F44 !important; }
+.about-page #page-title,
+.about-page h1.page__title { color: #0A1F44 !important; }
+
+.about-page .page__content {
+  font-family: $font-sans !important;  /* Lato for the text under the title */
+  font-size: 1rem;
+  line-height: 1.6;
+}
