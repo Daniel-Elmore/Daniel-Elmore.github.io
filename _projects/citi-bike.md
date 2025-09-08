@@ -6,6 +6,8 @@ layout: single
 author_profile: true
 toc: true
 teaser: "/assets/images/projects/city-bike-hero.png"
+header:
+   teaser: "/assets/images/projects/city-bike-hero.png"  
 ---
 ![](/assets/images/projects/city-bike-hero.png)
 ## Overview
