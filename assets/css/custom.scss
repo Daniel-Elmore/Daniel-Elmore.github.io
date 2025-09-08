@@ -221,3 +221,16 @@ a:hover, a:focus {
 .page__header .page__title {
   color: #0A1F44 !important;
 }
+
+
+/* Make single-page header titles navy, reliably */
+.page__header { --muted-text-color: #0A1F44 !important; }
+.page__header .page__title,
+.page__header [itemprop="headline"] { color: #0A1F44 !important; }
+
+/* About page: Lato for the paragraph content only */
+.about-page .page__content {
+  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.6;
+}
