@@ -23,7 +23,7 @@ This senior honors thesis explored how U.S. fiscal policy — through government
 
 ## Key Findings
 - Fiscal policy effects on labor supply are **nonlinear**, often resembling “Laffer-Curve style” relationships.  
-- Both expenditures and receipts showed **quadratic, cubic, quartic, and sextic patterns**, depending on category and magnitude.  
+- Both expenditures and receipts showed **quadratic, cubic, and quartic patterns**, depending on category and magnitude.  
 - Evidence points to an **optimal juncture** of spending and taxation where labor force participation is maximized.  
 - Over- or under-intervention can reduce labor engagement, challenging the adequacy of simple linear models.  
 
