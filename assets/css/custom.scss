@@ -132,3 +132,40 @@ a:hover, a:focus {
 .page {
   border-left: 0;
 }
+
+/* =============================
+   Projects page (list layout)
+   ============================= */
+.projects-list .archive__item {
+  max-width: 960px;                         /* wider than default for easier reading */
+  margin: 0 auto 2.5rem;                    /* center + breathing room */
+  padding-bottom: 2rem;                     /* space before divider */
+  border-bottom: 1px solid rgba($brand-main, 0.15);  /* subtle divider */
+}
+
+/* Left thumbnail sizing and consistency (3:2) */
+.projects-list .archive__item-teaser {
+  flex: 0 0 300px;          /* thumbnail column width */
+  margin-right: 1.25rem;
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 3 / 2;      /* keeps images uniform */
+  display: block;
+}
+.projects-list .archive__item-teaser img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* fill the 3:2 box without distortion */
+  display: block;
+}
+
+/* Let the text take remaining space nicely */
+.projects-list .archive__item-body {
+  flex: 1;
+  min-width: 0;             /* prevents overflow on long titles */
+}
+
+/* Tighten title/excerpt spacing slightly */
+.projects-list .archive__item-title { margin: 0.25rem 0 0.35rem; }
+.projects-list .archive__item-excerpt { margin-top: 0.35rem; }
+
