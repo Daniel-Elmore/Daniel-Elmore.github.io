@@ -393,17 +393,25 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 
 
 
+/* ===============================
+   PROJECT PAGES (single layout)
+   =============================== */
 
-
-/* ===== Project pages: clear descenders + tiny gap ===== */
+/* Bigger page title */
+.layout--single .page__title {
+  font-size: 2rem !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: 700 !important;
+}
 
 /* H2 */
 .layout--single .page__content h2 {
   font-size: 1.5rem !important;
-  line-height: 1.2 !important;         /* a touch looser to clear descenders */
+  line-height: 1.2 !important;          /* enough room for descenders */
   margin-top: 1rem !important;
-  margin-bottom: 0 !important;          /* no extra space below text */
-  padding-bottom: 0.35rem !important;   /* LOWER the rule so p/y/g don't hit it */
+  margin-bottom: 0 !important;
+  padding-bottom: 0.35rem !important;   /* lowers underline slightly */
   border-bottom: 1px solid #ccc !important;
 }
 
@@ -413,7 +421,7 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   line-height: 1.2 !important;
   margin-top: 0.9rem !important;
   margin-bottom: 0 !important;
-  padding-bottom: 0.3rem !important;    /* similar clearance */
+  padding-bottom: 0.3rem !important;
   border-bottom: 1px solid #ddd !important;
 }
 
@@ -423,7 +431,7 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   line-height: 1.2 !important;
   margin-top: 0.8rem !important;
   margin-bottom: 0 !important;
-  padding-bottom: 0.25rem !important;   /* similar clearance */
+  padding-bottom: 0.25rem !important;
   border-bottom: 1px solid #e0e0e0 !important;
 }
 
@@ -431,7 +439,7 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 .layout--single .page__content h2 + *,
 .layout--single .page__content h3 + *,
 .layout--single .page__content h4 + * {
-  margin-top: 0.25rem !important;       /* subtle gap under the underline */
+  margin-top: 0.25rem !important;
 }
 
 /* Body text (Lato) — smaller on project pages only */
