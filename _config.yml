@@ -206,12 +206,14 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from          # ← add this
 
-# mimic GitHub Pages with --safe (whitelist must match plugins above)
 whitelist:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from          # ← add this
+
 
 # ---------------------------------
 # Archives (no pages rendered unless you add archive pages)
