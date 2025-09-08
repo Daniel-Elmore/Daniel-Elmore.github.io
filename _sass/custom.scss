@@ -7,26 +7,32 @@ $font-serif: "EB Garamond", serif;
 $font-sans: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
 /* ===== Global typography ===== */
+
+/* Default body text = Lato */
 html, body {
-  font-family: $font-serif !important;  /* EB Garamond for body text */
+  font-family: $font-sans !important;   /* Lato */
   color: #222;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Headings = EB Garamond */
 h1, h2, h3, h4, h5, h6,
-.page__title, .site-title {
-  font-family: $font-serif !important;  /* EB Garamond for headings */
+.page__title,
+.entry-title,
+.archive__item-title,
+.site-title {
+  font-family: $font-serif !important;  /* EB Garamond */
   color: $brand-main;
 }
 
-/* Project card title = Garamond, excerpt = Lato */
-.archive__item-title { font-family: $font-serif !important; }
-.archive__item-excerpt {
-  font-family: $font-sans !important;
-  font-size: 0.95rem;
-  line-height: 1.55;
+/* Project excerpts, paragraphs, lists, blockquotes, etc. = Lato */
+p, li, blockquote,
+.archive__item-excerpt,
+.page__content {
+  font-family: $font-sans !important;   /* Lato */
 }
+
 
 /* Links */
 a { color: $brand-secondary; text-underline-offset: 2px; }
@@ -385,17 +391,3 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   .projects-list .archive__item-teaser { aspect-ratio: 3 / 2; }
 }
 
-
-/* ===== Headers in EB Garamond ===== */
-h1, h2, h3, h4, h5, h6,
-.page__title,
-.archive__item-title,
-.entry-title,
-.site-title {
-  font-family: "EB Garamond", serif !important;
-}
-
-/* ===== Body text stays in default (Georgia or whatever you set) ===== */
-body, p, li, blockquote, .archive__item-excerpt {
-  font-family: Georgia, serif !important; /* or your chosen body font */
-}
