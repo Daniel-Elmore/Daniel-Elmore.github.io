@@ -257,18 +257,16 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   margin: 0 0 0.25rem;
 }
 
-/* Center the entire Projects collection column */
-.projects-list .archive {
-  max-width: 1000px;      /* tweak 920–1100px to taste */
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;     /* gentle gutters */
+/* PROJECTS page: center the whole column (heading + list) */
+.projects-list .page__inner {
+  max-width: 1000px !important;   /* tweak 920–1100px if you want */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1rem;
   padding-right: 1rem;
 }
 
-/* Make the Lato excerpt smaller on Projects only */
-.projects-list .archive__item-excerpt {
-  font-size: 0.85rem !important;
-  line-height: 1.5;
+/* Undo the earlier flex on page__content so it doesn't interfere */
+.projects-list .page__content {
+  display: block !important;
 }
-
