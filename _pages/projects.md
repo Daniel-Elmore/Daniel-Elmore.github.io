@@ -3,9 +3,9 @@ title: "Projects"
 permalink: /projects/
 layout: collection
 collection: projects
-entries_layout: grid
+entries_layout: list   # instead of grid
 author_profile: false
-classes: wide projects-grid-3
+classes: wide
 sort_by: date
 sort_order: reverse
 ---
