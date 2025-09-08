@@ -222,17 +222,17 @@ a:hover, a:focus {
   color: #0A1F44 !important;
 }
 
-/* About page only: hide the theme's header */
-.about-page .page__header { display: none !important; }
-
-/* Style the manual H1 to match your brand */
+/* About page: show only your manual H1 */
+.about-page .page__header { display: none !important; }           /* hide theme header */
 .about-page .page__content > h1:first-child {
-  color: #0A1F44 !important;
+  color: #0A1F44 !important;                                      /* navy */
   font-family: "EB Garamond", serif;
   margin-top: 0;
 }
+/* hide the little chain/link icon next to the H1 */
+.about-page .page__content > h1:first-child .header-link { display: none !important; }
 
-/* Lato for the text under the heading */
+/* Lato for the paragraph text under the heading */
 .about-page .page__content {
   font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
   font-size: 1rem;
