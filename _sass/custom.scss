@@ -392,26 +392,46 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 }
 
 
-/* ===== Projects Page Tweaks ===== */
+/* ===============================
+   PROJECTS: bigger titles + tighter gaps
+   (place at the very end of custom.scss)
+   =============================== */
 
-/* Larger project headers */
+/* Bigger project titles (works for list/grid/archive) */
+.layout--collection .archive__item-title,
+.archive .archive__item-title,
 .projects-list .archive__item-title {
-  font-size: 1.4rem !important;   /* try 1.3–1.6rem to taste */
-  line-height: 1.2 !important;    /* tighter vertical rhythm */
-  margin-bottom: 0.25rem !important; /* less gap under the header */
-  font-weight: 600;               /* Garamond looks best at semi-bold */
+  font-size: clamp(1.35rem, 1.1rem + 0.7vw, 1.7rem) !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.25rem !important;
+  font-weight: 600 !important; /* EB Garamond looks clean at semi-bold */
 }
 
-/* Tighten excerpt spacing */
+/* Ensure the link inside the title inherits the size */
+.archive__item-title a {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+/* Tighten excerpt spacing under titles */
+.layout--collection .archive__item-excerpt,
+.archive .archive__item-excerpt,
 .projects-list .archive__item-excerpt {
-  margin-top: 0.25rem !important;
-  margin-bottom: 0 !important;    /* remove extra gap */
+  margin-top: 0.2rem !important;
+  margin-bottom: 0 !important;
 }
 
-/* Reduce bottom gap between projects */
+/* Reduce the gap between items (divider spacing) */
+.layout--collection .archive__item,
+.archive .archive__item,
 .projects-list .archive__item {
-  margin-bottom: 0.5rem !important;  /* was ~0.75–1rem */
-  padding-bottom: 0.5rem !important; /* smaller divider gap */
+  margin-bottom: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
 
-
+/* Optional: make single project page H1 a touch larger too */
+.page__title {
+  font-size: clamp(1.9rem, 1.4rem + 1.3vw, 2.5rem) !important;
+  line-height: 1.15 !important;
+  margin-bottom: 0.5rem !important;
+}
