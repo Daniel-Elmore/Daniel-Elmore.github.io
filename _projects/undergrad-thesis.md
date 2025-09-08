@@ -27,4 +27,4 @@ This senior honors thesis examined how Congress’s evolving fiscal role has sha
 - Presented at the **50th Annual Eastern Economic Association Conference** (2024)  
 
 ## Full Thesis
-[Download PDF](assets/docs/Undergraduate-Thesis.pdf)
+[Download PDF](assets/images/projects/Undergraduate-Thesis.pdf)
