@@ -1,6 +1,6 @@
 ---
 title: "Unlocking Labor Force Potential Through Fiscal Policy"
-excerpt: "Senior honors thesis analyzing the interaction of congressional fiscal policy and labor market outcomes, presented at the 50th Annual Eastern Economic Association Conference."
+excerpt: "Analyzed the interaction of congressional fiscal policy and labor market outcomes. Presented at the 50th Annual Eastern Economic Association Conference."
 date: 2024-04-27
 layout: single
 author_profile: true
