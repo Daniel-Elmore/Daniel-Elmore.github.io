@@ -245,3 +245,8 @@ a:hover, a:focus {
   display: none;
 }
 
+/* Hide title/header only on the resume page and remove the top gap */
+.page.resume-page .page__header,
+.page.resume-page .page__title { display: none !important; }
+
+.page.resume-page .page__content { margin-top: 0 !important; }
