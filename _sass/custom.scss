@@ -391,42 +391,44 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   .projects-list .archive__item-teaser { aspect-ratio: 3 / 2; }
 }
 
-
 /* ===============================
-   Project pages: bigger title + section headings
+   Project pages: balanced title + headings
    =============================== */
 
 /* Page title at top of each project */
 .layout--single .page__title {
-  font-size: 2.2rem !important;    /* adjust up/down to taste */
+  font-size: 2rem !important;       /* bigger than default ~1.7rem */
   line-height: 1.2 !important;
-  margin-bottom: 0.75rem !important;  /* less gap under the title */
+  margin-bottom: 0.65rem !important; /* slightly tighter gap */
   font-weight: 700 !important;
 }
 
 /* Section headings inside project content */
 .layout--single .page__content h2 {
-  font-size: 1.6rem !important;
+  font-size: 1.45rem !important;    /* between normal and large */
   line-height: 1.25 !important;
-  margin-top: 1.2rem !important;
-  margin-bottom: 0.3rem !important;  /* tighten gap above paragraph */
+  margin-top: 1.1rem !important;
+  margin-bottom: 0.25rem !important;
+  font-weight: 600 !important;
 }
 
 .layout--single .page__content h3 {
-  font-size: 1.35rem !important;
+  font-size: 1.25rem !important;
   line-height: 1.25 !important;
-  margin-top: 1rem !important;
-  margin-bottom: 0.25rem !important;
+  margin-top: 0.9rem !important;
+  margin-bottom: 0.2rem !important;
+  font-weight: 600 !important;
 }
 
 .layout--single .page__content h4 {
-  font-size: 1.15rem !important;
+  font-size: 1.1rem !important;
   line-height: 1.25 !important;
-  margin-top: 0.85rem !important;
+  margin-top: 0.75rem !important;
   margin-bottom: 0.2rem !important;
+  font-weight: 600 !important;
 }
 
-/* Tighten body text immediately after a heading */
+/* Tighten body text immediately after headings */
 .layout--single .page__content h2 + p,
 .layout--single .page__content h3 + p,
 .layout--single .page__content h4 + p {
