@@ -397,3 +397,12 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 .layout--single .page__inner-wrap > .page__title a:visited {
   color: #0A1F44 !important;
 }
+
+/* Bulletproof: force the main page title color on single pages */
+.layout--single article.page header > h1.page__title,
+.layout--single .page__inner-wrap > h1.page__title,
+article.page header > h1.page__title,
+h1.page__title {
+  color: #0A1F44 !important;
+}
+
