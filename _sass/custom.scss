@@ -339,25 +339,27 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 
 /* Base row styling + divider */
 .projects-list .archive__item {
+  display: grid;
+  grid-template-columns: 240px 1fr;   /* teaser | text */
+  column-gap: 1rem;
+  align-items: start;
   margin: 0 auto 0.75rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid rgba(#0A1F44, 0.15);
 }
 
-/* Only turn into a 2-column row if a teaser exists */
-.projects-list .archive__item:has(.archive__item-teaser) {
-  display: grid;
-  grid-template-columns: 220px 1fr;   /* teaser | text */
-  column-gap: 1rem;
-  align-items: start;
+/* Default: if there's no teaser, everything spans full width */
+.projects-list .archive__item > * {
+  grid-column: 1 / -1;
 }
 
 /* Teaser column */
 .projects-list .archive__item-teaser {
-  margin: 0 !important;               /* MM adds bottom margin; remove it */
+  grid-column: 1;
+  margin: 0 !important;   /* override MM’s bottom margin */
   border-radius: 6px;
   overflow: hidden;
-  aspect-ratio: 4 / 3;                 /* consistent thumbnail shape */
+  aspect-ratio: 3 / 2;    /* switched from 4:3 to 3:2 */
 }
 .projects-list .archive__item-teaser img {
   width: 100%;
@@ -366,9 +368,15 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   display: block;
 }
 
-/* Text column */
-.projects-list .archive__item-body { min-width: 0; }
-.projects-list .archive__item-title { margin: 0 0 0.25rem; }
+/* Put the rest (title, meta, excerpt) in the right column */
+.projects-list .archive__item-teaser ~ * {
+  grid-column: 2;
+}
+
+/* Tighten text column */
+.projects-list .archive__item-title {
+  margin: 0 0 0.25rem;
+}
 .projects-list .archive__item-excerpt {
   font-size: 0.85rem;
   line-height: 1.5;
@@ -377,9 +385,14 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 
 /* Mobile: stack image above text */
 @media (max-width: 720px) {
-  .projects-list .archive__item:has(.archive__item-teaser) {
+  .projects-list .archive__item {
     grid-template-columns: 1fr;
     row-gap: 0.5rem;
   }
-  .projects-list .archive__item-teaser { aspect-ratio: 16/9; }
+  .projects-list .archive__item > * {
+    grid-column: 1 / -1;
+  }
+  .projects-list .archive__item-teaser {
+    aspect-ratio: 16 / 9; /* widescreen look on mobile */
+  }
 }
