@@ -211,3 +211,13 @@ a:hover, a:focus {
   font-size: 1rem;
   line-height: 1.6;
 }
+
+
+/* Force single-page headers to match Projects heading color */
+.page__header {
+  --muted-text-color: #0A1F44 !important; /* override theme variable */
+}
+
+.page__header .page__title {
+  color: #0A1F44 !important;
+}
