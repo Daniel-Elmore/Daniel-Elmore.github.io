@@ -177,3 +177,18 @@ a:hover, a:focus {
 .page__header .page__title {
   color: #0A1F44 !important; /* explicit fallback */
 }
+
+body {
+  font-family: $base-font-family; // Garamond
+}
+
+/* Use Lato for page body content */
+.page__content {
+  font-family: $font-sans !important; /* Lato */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+:root {
+  --muted-text-color: #0A1F44 !important;
+}
