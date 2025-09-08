@@ -394,44 +394,33 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 
 
 /* ===============================
-   PROJECTS: bigger titles + tighter gaps
+   Project pages: larger section headings ONLY
+   (does NOT touch .page__title or archive cards)
    =============================== */
 
-/* Bigger project titles (works for list/grid/archive) */
-.layout--collection .archive__item-title,
-.archive .archive__item-title,
-.projects-list .archive__item-title {
-  font-size: clamp(1.35rem, calc(1.1rem + 0.7vw), 1.7rem) !important;
-  line-height: 1.2 !important;
+/* H2/H3/H4 inside the content column on single pages */
+.layout--single .page__content h2 {
+  font-size: 1.6rem !important;  /* bump to taste (1.5–1.8rem) */
+  line-height: 1.25 !important;
+  margin-top: 1.15rem !important;   /* slightly tighter than default */
+  margin-bottom: 0.35rem !important; /* pull body text closer */
+}
+
+.layout--single .page__content h3 {
+  font-size: 1.35rem !important;
+  line-height: 1.25 !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.layout--single .page__content h4 {
+  font-size: 1.15rem !important;
+  line-height: 1.25 !important;
+  margin-top: 0.85rem !important;
   margin-bottom: 0.25rem !important;
-  font-weight: 600 !important;
 }
 
-/* Ensure the link inside the title inherits the size */
-.archive__item-title a {
-  font-size: inherit !important;
-  line-height: inherit !important;
-}
-
-/* Tighten excerpt spacing under titles */
-.layout--collection .archive__item-excerpt,
-.archive .archive__item-excerpt,
-.projects-list .archive__item-excerpt {
-  margin-top: 0.2rem !important;
-  margin-bottom: 0 !important;
-}
-
-/* Reduce the gap between items (divider spacing) */
-.layout--collection .archive__item,
-.archive .archive__item,
-.projects-list .archive__item {
-  margin-bottom: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
-}
-
-/* Optional: single project page H1 a touch larger */
-.page__title {
-  font-size: clamp(1.9rem, calc(1.4rem + 1.3vw), 2.5rem) !important;
-  line-height: 1.15 !important;
-  margin-bottom: 0.5rem !important;
+/* Keep body text right up under headings (optional) */
+.layout--single .page__content p:first-child {
+  margin-top: 0 !important;
 }
