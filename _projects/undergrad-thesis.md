@@ -1,6 +1,6 @@
 ---
 title: "Unlocking Labor Force Potential Through Fiscal Policy"
-excerpt: "Analyzed the interaction of congressional fiscal policy and labor market outcomes. Presented at the 50th Annual Eastern Economic Association Conference."
+excerpt: "Investigated nonlinear relationships between U.S. fiscal policy and labor force participation. Presented at the 50th Annual Eastern Economic Association Conference."
 date: 2024-04-27
 layout: single
 author_profile: true
@@ -9,22 +9,26 @@ teaser: "/assets/images/projects/undergrad-thesis-hero.png"
 header:
   teaser: "/assets/images/projects/undergrad-thesis-hero.png"
 ---
+
 ![](/assets/images/projects/undergrad-thesis-hero.png)
+
 ## Overview
-This senior honors thesis examined how Congress’s evolving fiscal role has shaped labor market potential. By analyzing tax policy, spending behavior, and labor supply responses, the project evaluated the extent to which institutional dynamics influence economic outcomes. 
+This senior honors thesis explored how U.S. fiscal policy — through government spending and taxation — interacts with labor force participation. By analyzing historical data across multiple fiscal categories, the project identified nonlinear, threshold-style effects, suggesting the existence of an optimal balance where fiscal policy most effectively supports labor market engagement. The work reframes the policy debate from “more vs. less” spending toward finding a sustainable equilibrium.
 
 ## Methods
-- Empirical analysis conducted in **Excel and R** with econometric modeling  
-- Review of fiscal multipliers and labor supply elasticities  
-- Policy evaluation framed through both historical and institutional perspectives  
+- Historical data on federal expenditures, receipts, GDP, tax rates, and labor force participation  
+- Scatterplots with polynomial trendlines to capture nonlinear relationships  
+- Econometric analysis in **Excel and R** to test correlations across multiple categories  
+- Framework grounded in institutional and historical perspectives  
 
 ## Key Findings
-- Rising fiscal commitments often produced **diminishing marginal gains in labor force participation**, especially under expansionary spending regimes.  
-- Congressional budgetary behavior displayed a **pro-cyclical bias**, amplifying rather than dampening economic fluctuations.  
-- Tax policy adjustments exhibited **asymmetric effects**: labor supply responses were stronger under tax cuts than under equivalent increases.  
+- Fiscal policy effects on labor supply are **nonlinear**, often resembling “Laffer-Curve style” relationships.  
+- Both expenditures and receipts showed **quadratic, cubic, quartic, and sextic patterns**, depending on category and magnitude.  
+- Evidence points to an **optimal juncture** of spending and taxation where labor force participation is maximized.  
+- Over- or under-intervention can reduce labor engagement, challenging the adequacy of simple linear models.  
 
 ## Recognition
 - Presented at the **50th Annual Eastern Economic Association Conference** (2024)  
 
 ## Full Thesis
-[Download PDF](assets/images/projects/Undergraduate-Thesis.pdf)
+[Download PDF]({{ '/assets/docs/Undergraduate-Thesis.pdf' | relative_url }})
