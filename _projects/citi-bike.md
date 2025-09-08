@@ -5,9 +5,7 @@ date: 2023-11-27
 layout: single
 author_profile: true
 toc: true
-teaser: "/assets/images/projects/mlb-roi-hero.png"
-header:
-  teaser: "/assets/images/projects/city-bike-hero.png"
+teaser: "/assets/images/projects/city-bike-hero.png"
 ---
 ![](/assets/images/projects/city-bike-hero.png)
 ## Overview
