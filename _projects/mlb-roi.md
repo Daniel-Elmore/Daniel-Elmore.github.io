@@ -5,6 +5,7 @@ layout: single
 author_profile: true
 toc: true
 date: 2025-09-06
+teaser: "/assets/images/projects/mlb-roi-hero.png"
 header:
   teaser: "/assets/images/projects/mlb-roi-hero.png"
 ---
