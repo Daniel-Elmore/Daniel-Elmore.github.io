@@ -189,3 +189,20 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   flex: 1;
   min-width: 0;
 }
+
+/* Homepage: force 2-up grid (scoped) */
+.home-2up .grid__wrapper {
+  display: flex;            /* MM already uses flex; this is safe */
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.home-2up .grid__item {
+  width: calc(50% - 1rem) !important;   /* 2 columns */
+}
+
+@media (max-width: 900px) {
+  .home-2up .grid__item {
+    width: 100% !important;             /* 1 column on mobile */
+  }
+}
