@@ -126,25 +126,140 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 .page__footer .far { font-family: "Font Awesome 5 Free" !important; font-weight: 900; color: #fff; }
 .page__footer .fab { font-family: "Font Awesome 5 Brands" !important; font-weight: 400; color: #fff; }
 
-/* =========================================
-   Projects page — list layout (scoped only)
-   Add `classes: wide projects-list` in projects.md
-   ========================================= */
+/* =======================
+   PROJECTS PAGE (SAFE GRID)
+   ======================= */
+
+/* Widen the content area beside the sidebar */
+.layout--collection .page__content { max-width: 1200px !important; }
+
+/* 2 columns on desktop, 1 on phones */
+.layout--collection .entries-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(320px, 1fr)) !important;
+  gap: 2rem !important;
+}
+@media (max-width: 900px) {
+  .layout--collection .entries-grid { grid-template-columns: 1fr !important; }
+}
+
+/* Let each card fill its grid cell naturally */
+.layout--collection .archive__item { width: auto !important; margin: 0 !important; }
+
+/* Teaser images scale correctly */
+.layout--collection .archive__item-teaser img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+
+/* Normal wrapping so text doesn’t go vertical */
+.layout--collection .archive__item,
+.layout--collection .archive__item * {
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+}
+
+
+/* =========================
+   PROJECTS PAGE – lock to a sane grid
+   (cover both class names used by Minimal Mistakes)
+   ========================= */
+
+/* Widen the content area beside the sidebar a bit */
+.layout--collection .page__content { max-width: 1200px !important; }
+
+/* Force grid, kill masonry/columns */
+.layout--collection .grid__wrapper,
+.layout--collection .entries-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(320px, 1fr)) !important;
+  gap: 2rem !important;
+
+  /* neutralize column/masonry props some skins set */
+  column-count: initial !important;
+  column-gap: initial !important;
+  -moz-column-count: initial !important;
+  -moz-column-gap: initial !important;
+  -webkit-column-count: initial !important;
+  -webkit-column-gap: initial !important;
+}
+
+@media (max-width: 900px) {
+  .layout--collection .grid__wrapper,
+  .layout--collection .entries-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Make sure items behave inside the grid cells */
+.layout--collection .archive__item,
+.layout--collection .grid__wrapper > * ,
+.layout--collection .entries-grid > * {
+  width: auto !important;
+  margin: 0 !important;
+  break-inside: avoid !important;   /* no column breaks creating tiny widths */
+}
+
+/* Teaser images scale properly */
+.layout--collection .archive__item-teaser img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+
+/* Normal wrapping so text doesn’t go vertical */
+.layout--collection .archive__item,
+.layout--collection .archive__item * {
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+}
+
+/* (Optional) slightly larger, readable excerpt */
+.layout--collection .archive__item-excerpt {
+  font-family: $font-sans !important;
+  font-size: 0.95rem !important;
+  line-height: 1.55 !important;
+  max-width: 60ch !important;
+}
+
+
+/* === Adjust project card spacing and subtext === */
+
+/* More breathing room between cards */
+.layout--collection .entries-grid {
+  grid-column-gap: 3rem !important; /* wider horizontal gap */
+  grid-row-gap: 2.5rem !important;  /* a bit more vertical spacing */
+}
+
+/* Smaller, lighter subtext for project descriptions */
+.layout--collection .archive__item-excerpt {
+  font-size: 0.8rem !important;   /* smaller text */
+  line-height: 1.4 !important;    /* tighter spacing */
+  color: #444 !important;         /* slightly softer than body text */
+}
+
+/* Projects page — list layout only */
 .projects-list .archive__item {
   max-width: 960px;
-  margin: 0 auto .25rem;               /* spacing between items */
+  margin: 0 auto 1.25rem; /* spacing between items */
   border-bottom: 1px solid rgba(#0A1F44, 0.15);
 }
 
-.projects-list .archive__item-title {    /* tighten title → excerpt */
-  margin-bottom: 0.25rem;
+.projects-list .archive__item-title {
+  margin-bottom: 0.25rem; /* tighten title → excerpt */
 }
 
-.projects-list .archive__item-excerpt {  /* no gap before divider */
-  margin-bottom: 0;
+.projects-list .archive__item-excerpt {
+  margin-bottom: 0;       /* no gap before divider */
 }
 
-/* Left thumbnail, consistent 3:2 (requires each project front matter to set `teaser:`) */
+
+/* Left thumbnail, consistent 3:2 */
 .projects-list .archive__item-teaser {
   flex: 0 0 300px;
   margin-right: 1.25rem;
@@ -165,3 +280,34 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   flex: 1;
   min-width: 0;
 }
+.projects-list .archive__item-title { margin: 0.25rem 0 0.35rem; }
+.projects-list .archive__item-excerpt { margin-top: 0.35rem; }
+
+/* Projects page — list layout only */
+.projects-list .archive__item {
+  max-width: 960px;
+  margin: 0 auto 1.25rem;
+  border-bottom: 1px solid rgba(#0A1F44, 0.15);
+}
+.projects-list .archive__item-title { margin-bottom: 0.25rem; }
+.projects-list .archive__item-excerpt { margin-bottom: 0; }
+
+/* Left thumbnail column (consistent 3:2) */
+.projects-list .archive__item-teaser {
+  flex: 0 0 300px;
+  margin-right: 1.25rem;
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+  display: block;
+}
+.projects-list .archive__item-teaser img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text column */
+.projects-list .archive__item-body { flex: 1; min-width: 0; }
+
