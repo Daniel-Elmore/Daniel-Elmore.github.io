@@ -392,35 +392,43 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 }
 
 
-
 /* ===============================
-   Project pages: larger section headings ONLY
-   (does NOT touch .page__title or archive cards)
+   Project pages: bigger title + section headings
    =============================== */
 
-/* H2/H3/H4 inside the content column on single pages */
+/* Page title at top of each project */
+.layout--single .page__title {
+  font-size: 2.2rem !important;    /* adjust up/down to taste */
+  line-height: 1.2 !important;
+  margin-bottom: 0.75rem !important;  /* less gap under the title */
+  font-weight: 700 !important;
+}
+
+/* Section headings inside project content */
 .layout--single .page__content h2 {
-  font-size: 1.6rem !important;  /* bump to taste (1.5–1.8rem) */
+  font-size: 1.6rem !important;
   line-height: 1.25 !important;
-  margin-top: 1.15rem !important;   /* slightly tighter than default */
-  margin-bottom: 0.35rem !important; /* pull body text closer */
+  margin-top: 1.2rem !important;
+  margin-bottom: 0.3rem !important;  /* tighten gap above paragraph */
 }
 
 .layout--single .page__content h3 {
   font-size: 1.35rem !important;
   line-height: 1.25 !important;
   margin-top: 1rem !important;
-  margin-bottom: 0.3rem !important;
+  margin-bottom: 0.25rem !important;
 }
 
 .layout--single .page__content h4 {
   font-size: 1.15rem !important;
   line-height: 1.25 !important;
   margin-top: 0.85rem !important;
-  margin-bottom: 0.25rem !important;
+  margin-bottom: 0.2rem !important;
 }
 
-/* Keep body text right up under headings (optional) */
-.layout--single .page__content p:first-child {
+/* Tighten body text immediately after a heading */
+.layout--single .page__content h2 + p,
+.layout--single .page__content h3 + p,
+.layout--single .page__content h4 + p {
   margin-top: 0 !important;
 }
