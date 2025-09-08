@@ -397,7 +397,7 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 
 /* Bigger page title */
 .layout--single .page__title {
-  font-size: 2.2rem !important;
+  font-size: 2rem !important;
   line-height: 1.2 !important;
   margin-bottom: 0.5rem !important;
   font-weight: 700 !important;
@@ -408,7 +408,7 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   font-size: 1.5rem !important;       /* clearly larger than body */
   line-height: 1.1 !important;        /* pulls text closer to underline */
   margin-top: 1rem !important;
-  margin-bottom: 0.15rem !important;   /* tiny gap above the line */
+  margin-bottom: 0.25rem !important;   /* tiny gap above the line */
   padding-bottom: 0 !important;       /* remove theme’s extra padding */
   border-bottom: 1px solid #ccc;      /* keep the underline */
 }
