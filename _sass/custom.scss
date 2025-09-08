@@ -409,7 +409,7 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 .layout--single .page__content h3,
 .layout--single .page__content h4 {
   margin-top: 1rem !important;       /* smaller gap above */
-  margin-bottom: 0.2rem !important;  /* very small gap below */
+  margin-bottom: 0.05rem !important;  /* very small gap below */
   line-height: 1.25 !important;
 }
 
@@ -431,7 +431,7 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 .layout--single.projects .page__content p,
 .layout--single.projects .page__content li,
 .layout--single.projects .page__content blockquote {
-  font-size: 0.9rem !important;   /* try 0.85–0.95rem to taste */
+  font-size: 0.8rem !important;   /* try 0.85–0.95rem to taste */
   line-height: 1.45 !important;   /* keep it readable */
   font-family: $font-sans !important;  /* Lato */
 }
