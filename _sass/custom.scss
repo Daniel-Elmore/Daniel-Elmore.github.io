@@ -257,52 +257,6 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   margin: 0 0 0.25rem;
 }
 
-/* PROJECTS page: center the whole column (heading + list) */
-.projects-list .page__inner {
-  max-width: 1000px !important;   /* tweak 920–1100px if you want */
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 0rem;
-  padding-right: 2rem;
-}
-
-/* Undo the earlier flex on page__content so it doesn't interfere */
-.projects-list .page__content {
-  display: block !important;
-}
-
-
-/* ---------- Projects page: make items flush-left with the heading ---------- */
-
-/* Set the page column width for /projects (title and list share this column) */
-.projects-list .page__inner {
-  max-width: 960px !important;     /* tweak if you want 920–1100px */
-  margin: 0 auto !important;
-  padding: 0 1rem;                  /* small gutters */
-}
-
-/* Ensure the content wrapper doesn't re-center children via flex */
-.projects-list .page__content {
-  display: block !important;
-  max-width: none !important;
-}
-
-/* Let the list container fill the column */
-.projects-list .archive {
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* The key: do NOT center each item; make it fill the column */
-.projects-list .archive__item {
-  max-width: 100% !important;       /* span the same column as the heading */
-  margin: 0 0 0.5rem !important;    /* only bottom margin */
-  padding-bottom: 0.5rem !important;
-  border-bottom: 1px solid rgba(#0A1F44, 0.15);
-  text-align: left !important;
-}
-
 /* Optional: slightly smaller excerpt on this page */
 .projects-list .archive__item-excerpt {
   font-size: 0.85rem !important;
