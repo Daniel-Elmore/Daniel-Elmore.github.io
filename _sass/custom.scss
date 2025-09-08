@@ -390,3 +390,12 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   color: $brand-main !important;
 }
 
+/* Sidebar headings (e.g., "About", "Follow") in brand color */
+.page__sidebar h2,
+.page__sidebar h3,
+.page__sidebar .nav__title,
+.page__sidebar .widget-title,
+.page__sidebar .author__urls-wrapper > h2 {
+  color: $brand-main !important;  /* #0A1F44 */
+}
+
