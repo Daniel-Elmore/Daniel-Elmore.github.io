@@ -392,19 +392,19 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
 }
 
 
+
 /* ===============================
    PROJECTS: bigger titles + tighter gaps
-   (place at the very end of custom.scss)
    =============================== */
 
 /* Bigger project titles (works for list/grid/archive) */
 .layout--collection .archive__item-title,
 .archive .archive__item-title,
 .projects-list .archive__item-title {
-  font-size: clamp(1.35rem, 1.1rem + 0.7vw, 1.7rem) !important;
+  font-size: clamp(1.35rem, calc(1.1rem + 0.7vw), 1.7rem) !important;
   line-height: 1.2 !important;
   margin-bottom: 0.25rem !important;
-  font-weight: 600 !important; /* EB Garamond looks clean at semi-bold */
+  font-weight: 600 !important;
 }
 
 /* Ensure the link inside the title inherits the size */
@@ -429,9 +429,9 @@ a:hover, a:focus { color: darken($brand-secondary, 12%); }
   padding-bottom: 0.5rem !important;
 }
 
-/* Optional: make single project page H1 a touch larger too */
+/* Optional: single project page H1 a touch larger */
 .page__title {
-  font-size: clamp(1.9rem, 1.4rem + 1.3vw, 2.5rem) !important;
+  font-size: clamp(1.9rem, calc(1.4rem + 1.3vw), 2.5rem) !important;
   line-height: 1.15 !important;
   margin-bottom: 0.5rem !important;
 }
