@@ -5,6 +5,7 @@ date: 2024-04-27
 layout: single
 author_profile: true
 toc: true
+teaser: "/assets/images/projects/undergrad-thesis-hero.png"
 header:
   teaser: "/assets/images/projects/undergrad-thesis-hero.png"
 ---
