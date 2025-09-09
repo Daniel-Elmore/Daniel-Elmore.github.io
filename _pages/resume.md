@@ -71,6 +71,7 @@ classes: wide
 
 ## Skills
 
-- **Languages & Tools:** SQL · Python · R · Tableau · Power BI · Git/GitHub · LaTeX  
-- **Analysis Methods:** Econometrics (OLS, fixed effects, non-parametric tests) · Time-series forecasting (Prophet, ARIMA) · Clustering & classification (k-means, decision trees)  
-- **Other:** Data storytelling · ETL pipeline design · Experimental design (A/B testing) · Visualization best practices
+- **Languages & Tools:** SQL, Python, R, Tableau, Power BI, Git/GitHub, LaTeX  
+- **Python Libraries:** pandas, NumPy, scikit-learn, XGBoost, matplotlib, Prophet  
+- **Analysis Methods:** Econometrics (OLS, fixed effects, non-parametric tests), Time-series forecasting (ARIMA, Prophet), Clustering & classification (k-means, decision trees, gradient boosting)  
+- **Other:** Data storytelling, ETL pipeline design, Experimental design (A/B testing), Visualization best practices
