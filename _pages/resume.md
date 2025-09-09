@@ -52,14 +52,23 @@ classes: wide
 
 ## Projects
 
-- [**Are MLB Teams Spending Smarter?: An ROI Analysis of Payroll vs. Performance**](/projects/mlb-roi/)  
-  Built SQL + Python pipeline integrating Lahman & Neil Paine WAR datasets; regression showed payroll explained only ~12% of wins, with diminishing returns above ~$150M. Identified small-market teams (Rays, A’s) achieving ~3× efficiency.  
+[**Are MLB Teams Spending Smarter?: An ROI Analysis of Payroll vs. Performance**](/projects/mlb-roi/)  
+- Built a SQL + Python pipeline integrating Lahman & Neil Paine WAR datasets, performing data cleaning, schema design, and regression analysis.  
+- Demonstrated payroll explained only ~12% of wins, with diminishing returns above ~$150M, using OLS regression.  
+- Identified small-market teams (Rays, A’s) achieving ~3× efficiency, highlighting payroll ROI patterns overlooked by raw spending metrics.  
+- Designed visualizations and a McKinsey-style slide deck to communicate insights to non-technical audiences.  
 
-- [**User Behavior and Citi Bike**](/projects/citi-bike/)  
-  Analyzed 30M+ NYC bike-share rides in R with geospatial mapping and hypothesis testing; uncovered significant differences in distance, duration, and station choice, informing pricing and access policy.  
+[**User Behavior and Citi Bike**](/projects/citi-bike/)  
+- Analyzed 30M+ NYC bike-share rides in R, combining geospatial mapping and hypothesis testing to evaluate user behavior.  
+- Uncovered statistically significant differences in distance, duration, and station choice by user type and neighborhood.  
+- Tested behavioral economics hypotheses about pricing and access, showing how station density influenced rider decisions.  
+- Produced interactive maps and time-series plots for data storytelling and policy relevance.  
 
-- [**Unlocking Labor Force Potential Through Fiscal Policy**](/projects/undergrad-thesis/)  
-  Modeled U.S. panel data (1976–2023) with fixed-effects regression in Excel and R; evaluated tax incentives & public spending on labor participation. Presented at the 50th Annual Eastern Economic Association Conference.  
+[**Unlocking Labor Force Potential Through Fiscal Policy**](/projects/undergrad-thesis/)  
+- Modeled U.S. panel data (1976–2023) with fixed-effects regression in Excel and R to evaluate fiscal policy’s impact on labor participation.  
+- Examined tax incentives and public spending, comparing labor supply elasticities across decades of congressional fiscal changes.  
+- Reviewed literature on fiscal multipliers and labor market dynamics to contextualize findings.  
+- Presented research at the 50th Annual Eastern Economic Association Conference, engaging with professional economists.  
 
 ---
 
