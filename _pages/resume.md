@@ -9,7 +9,7 @@ classes: wide
 
 # Resume
 
-[📄 **Download PDF Resume**](/assets/docs/Daniel_Elmore_Resume__Updated_9_9_25_.pdf)
+[**Download Resume (PDF)**](/assets/docs/Daniel_Elmore_Resume__Updated_9_9_25_.pdf)
 
 ---
 
