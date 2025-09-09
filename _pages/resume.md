@@ -9,7 +9,6 @@ classes: wide
 
 [**Download Resume (PDF)**](/assets/docs/Daniel_Elmore_Resume__Updated_9_9_25_.pdf)
 
----
 
 ## Experience
 
@@ -35,7 +34,6 @@ classes: wide
 - Analyzed social media growth from launch, contributing to scaling Twitter to 2.2M impressions and Facebook to 120K reach in the final month before acquisition.  
 - Collaborated with editors to align content strategy with audience engagement patterns.  
 
----
 
 ## Education
 
@@ -44,8 +42,6 @@ classes: wide
 
 **Lenoir-Rhyne University** — BA, Economics with Honors; Minor in Finance (GPA: 4.0)  
 *Aug 2021–May 2024*  
-
----
 
 ## Projects
 
