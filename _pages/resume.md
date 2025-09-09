@@ -7,7 +7,7 @@ toc: false
 classes: wide
 ---
 
-# Resume / CV
+# Resume
 
 [📄 **Download PDF Resume**](/assets/docs/Daniel_Elmore_Resume__Updated_9_9_25_.pdf)
 
