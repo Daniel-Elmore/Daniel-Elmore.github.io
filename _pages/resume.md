@@ -6,9 +6,6 @@ author_profile: true
 toc: false
 classes: wide
 ---
-
-# Resume
-
 [**Download Resume (PDF)**](/assets/docs/Daniel_Elmore_Resume__Updated_9_9_25_.pdf)
 
 ---
