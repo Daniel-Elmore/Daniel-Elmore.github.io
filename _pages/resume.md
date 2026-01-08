@@ -41,7 +41,7 @@ classes: wide
 
 ## Projects
 
-[**Threshold Forecasting Under Rare Events: Mini-Golf Milestone Prediction**](_projects/Mini-Golf-Threshold-Forecasting)  
+[**Threshold Forecasting Under Rare Events: Mini-Golf Milestone Prediction**](projects/mini-golf-threshold-forecasting/)  
 - Modeled a rare performance milestone (achieving a score of under 30 strokes over 18 holes) as a time-to-event forecasting problem under extreme outcome sparsity using survival analysis and Bayesian inference.  
 - Estimated historical completion-time distributions with Kaplan–Meier curves and a pooled Bayesian log-normal AFT model, then updated posteriors using ten observed rounds without success to refine timing expectations.  
 - Translated posterior uncertainty into actionable decision odds via 10,000-draw Monte Carlo simulation, estimating a ~0.93% probability of a sub-30 round at Day 10 and a median completion near Day 29.  
