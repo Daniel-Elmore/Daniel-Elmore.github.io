@@ -1,6 +1,7 @@
 ---
 title: "Threshold Forecasting Under Rare Events: Mini-Golf Milestone Prediction"
 excerpt: "Applied Bayesian survival analysis and Monte Carlo simulation to forecast when a rare mini-golf performance threshold would be achieved."
+permalink: /projects/mini-golf-threshold-forecasting/
 layout: single
 author_profile: true
 toc: true
@@ -9,10 +10,10 @@ image:
   path: /assets/images/projects/Mini-Golf-Threshold-Forecasting-Hero.png
   thumbnail: /assets/images/projects/Mini-Golf-Threshold-Forecasting-Hero.png
   teaser: /assets/images/projects/Mini-Golf-Threshold-Forecasting-Hero.png
-
 header:
   teaser: "/assets/images/projects/Mini-Golf-Threshold-Forecasting-Hero.png"
 ---
+
 
 ![](/assets/images/projects/Mini-Golf-Threshold-Forecasting-Hero.png)
 
