@@ -41,6 +41,13 @@ classes: wide
 
 ## Projects
 
+[**Threshold Forecasting Under Rare Events: Mini-Golf Milestone Prediction**](/projects/Mini-Golf-Threshold-Forecasting/)  
+- Modeled a rare performance milestone (achieving a score of under 30 strokes over 18 holes) as a time-to-event forecasting problem under extreme outcome sparsity using survival analysis and Bayesian inference.  
+- Estimated historical completion-time distributions with Kaplan–Meier curves and a pooled Bayesian log-normal AFT model, then updated posteriors using ten observed rounds without success to refine timing expectations.  
+- Translated posterior uncertainty into actionable decision odds via 10,000-draw Monte Carlo simulation, estimating a ~0.93% probability of a sub-30 round at Day 10 and a median completion near Day 29.  
+- Diagnosed remaining performance constraints by decomposing front- and back-nine scoring, identifying back-nine inefficiency as the primary bottleneck to milestone achievement.
+
+
 [**Are MLB Teams Spending Smarter?: An ROI Analysis of Payroll vs. Performance**](/projects/mlb-roi/)  
 - Built a SQL + Python pipeline integrating Lahman & Neil Paine WAR datasets for data cleaning, schema design, and regression analysis.  
 - Found payroll explained only ~12% of wins, with diminishing returns above ~$150M.  
