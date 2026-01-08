@@ -9,31 +9,29 @@ classes: wide
 
 [**Download Resume (PDF)**](/assets/docs/Daniel_Elmore_Resume__Updated_9_9_25_.pdf)
 
-
 ## Experience
 
-**The Daily Signal** — *Data & Strategy Consultant*  
-*Washington, DC (Remote) | Oct 2024–Present*  
-- Delivered monthly analytics reports to leadership and editorial teams, synthesizing insights from 8 platforms (GA4, Chartbeat, Facebook, X, YouTube, Beehiiv, Instagram, Megaphone) to guide strategy.  
-- Applied statistical testing (t-tests, OLS regression, Mann–Whitney U) and time-series forecasting (Prophet) to evaluate campaign performance and optimize publishing cadences.  
-- Tested publishing cadence and content mix, contributing to 6-month gains: +45% sessions, 14× Facebook reach, 4.3× X impressions, 1.7× YouTube views, and +85% podcast downloads (300K+ across 4 shows).  
-- Vectorized post text with TF-IDF and clustered via k-means to identify high-engagement themes, refining distribution strategies.  
-
-**The Tony Kinnett Cast** — *Marketing Strategist & Producer*  
+### **The Tony Kinnett Cast** — *Revenue & Growth Operations Analyst*  
 *Indianapolis, IN (Remote) | Aug 2024–Present*  
-- Analyzed performance across YouTube, Megaphone, X, and Rumble to identify retention drop-offs, informing pacing, ad placement, and creative choices that doubled average view duration and increased episode viewership 8×.  
-- Built a Python→PostgreSQL ETL integrating YouTube, X, and Megaphone APIs; automated ingestion of daily performance data with schema validation, cutting prep time 50% and enabling same-day cross-platform KPIs.  
-- Conducted quarterly content audits with A/B testing and behavioral analysis to optimize thumbnails, titles, and hook timing for higher engagement.  
-- Incorporated live viewer feedback and multi-platform analytics to refine strategy and strengthen audience retention.  
-- Coordinated publishing strategy with The Daily Signal editorial team to ensure reach and consistency across platforms.  
+- Analyzed monetization performance across advertising, memberships, and donations using audience behavior, engagement metrics, and revenue analytics to assess monetization readiness and support go-to-market decisions, contributing to five-figure monthly recurring revenue.  
+- Evaluated content structure, view duration, click-through behavior, SEO discovery, and engagement signals to optimize hooks, pacing, and ad timing, contributing to an ~8× increase in views.  
+- Designed and maintained a Python-based ETL pipeline integrating Nielsen, YouTube, X, and Megaphone data into PostgreSQL, enabling consistent cross-platform performance analysis and reducing manual reporting effort by 50%.  
+- Conducted recurring cohort analysis and A/B testing to evaluate episode-level performance, content experiments, and monetization strategies, informing ongoing optimization decisions.
 
-**Chalkboard Review** — *Data & Analytics Coordinator*  
+### **The Daily Signal** — *Data Consultant*  
+*Washington, DC (Remote) | Oct 2024–Dec 2025*  
+- Engineered and owned a Python-based analytics pipeline ingesting monthly CSV and API data across multiple platforms, performing data cleaning, joins, feature engineering, and derived KPI computation for leadership-facing reporting.  
+- Executed recurring statistical analysis and time-series forecasting (t-tests, OLS regression, Mann–Whitney U, Prophet) to identify significant trends and inform publishing cadence and content strategy.  
+- Delivered data-driven insights that contributed to first-six-month performance lifts of +45% website traffic, +1,430% Facebook reach, +430% X impressions, and +170% YouTube views.  
+- Applied TF-IDF topic modeling and k-means clustering to identify high-engagement content themes and optimize multi-platform distribution strategy.
+
+### **Chalkboard Review** — *Data & Analytics Coordinator*  
 *Remote | Nov 2020–Nov 2022*  
-- Produced monthly analytics reports using Google Analytics, Facebook, and Twitter data, surfacing trends that informed editorial priorities.  
-- Built dashboards in Excel, Power BI, and Tableau to track site performance, supporting planning during peak traffic periods of ~500K monthly readers.  
-- Analyzed social media growth from launch, contributing to scaling Twitter to 2.2M impressions and Facebook to 120K reach in the final month before acquisition.  
-- Collaborated with editors to align content strategy with audience engagement patterns.  
+- Produced recurring analytics reports for editorial and marketing teams using Google Analytics, Facebook, and Twitter data to surface performance trends and guide publishing decisions.  
+- Developed dashboards in Excel, Power BI, and Tableau to monitor website and social KPIs during growth to ~500K monthly readers.  
+- Analyzed audience growth from launch through acquisition, contributing to expansion to 2.2M Twitter impressions and 120K Facebook reach in the final month prior to acquisition.
 
+---
 
 ## Education
 
@@ -43,32 +41,33 @@ classes: wide
 **Lenoir-Rhyne University** — BA, Economics with Honors; Minor in Finance (GPA: 4.0)  
 *Aug 2021–May 2024*  
 
+---
+
 ## Projects
 
 [**Are MLB Teams Spending Smarter?: An ROI Analysis of Payroll vs. Performance**](/projects/mlb-roi/)  
-- Built a SQL + Python pipeline integrating Lahman & Neil Paine WAR datasets for data cleaning, schema design, and regression analysis.  
-- Found payroll explained only 12% of wins (R²=0.12), with diminishing returns above ~$150M.  
-- Identified small-market teams (Rays, A’s) achieving ~3× efficiency, highlighting ROI advantages beyond raw spending.  
-- Produced visualizations and a McKinsey-style slide deck to communicate findings to non-technical audiences.  
+- Built a SQL + Python pipeline integrating Lahman and Neil Paine WAR datasets for data cleaning, schema design, and regression analysis.  
+- Found payroll explained only ~12% of win variation, with diminishing returns above ~$150M.  
+- Identified small-market teams (Rays, A’s) achieving ~3× efficiency relative to payroll.  
+- Produced executive-ready visualizations and a McKinsey-style slide deck for non-technical audiences.
 
 [**User Behavior and Citi Bike**](/projects/citi-bike/)  
-- Analyzed 30M+ NYC bike-share rides in R, combining geospatial mapping and hypothesis testing to evaluate rider behavior.  
-- Detected statistically significant differences in distance, duration, and station choice by user type and neighborhood.  
-- Tested behavioral economics hypotheses on pricing and access, showing station density influenced rider decisions.  
-- Built interactive maps and time-series plots for policy-relevant data storytelling.  
+- Analyzed 30M+ NYC bike-share rides in R using geospatial mapping and hypothesis testing to evaluate rider behavior.  
+- Identified statistically significant differences in distance, duration, and station choice by user type and neighborhood.  
+- Tested behavioral economics hypotheses on pricing and access, showing station density materially influenced rider decisions.
 
 [**Unlocking Labor Force Potential Through Fiscal Policy**](/projects/undergrad-thesis/)  
-- Modeled U.S. panel data (1976–2023) with fixed-effects regression in Excel and R to evaluate fiscal policy’s impact on labor participation.  
-- Examined tax incentives and public spending, comparing labor supply elasticities across decades.  
-- Presented findings at the 50th Annual Eastern Economic Association Conference.  
+- Modeled U.S. panel data (1976–2023) using fixed-effects regression in Excel and R to evaluate fiscal policy impacts on labor force participation.  
+- Compared labor supply elasticities across decades under differing tax and spending regimes.  
+- Presented findings at the 50th Annual Eastern Economic Association Conference.
 
 ---
 
 ## Skills
 
-- **Languages/DB:** SQL, Python, R, PostgreSQL  
+- **Languages & Databases:** SQL, Python, R, PostgreSQL  
 - **Libraries:** pandas, NumPy, scikit-learn, XGBoost, matplotlib, ggplot2, Prophet  
-- **Analytics/ML:** regression, forecasting, clustering, classification, econometrics, A/B testing  
+- **Analytics & ML:** econometrics, statistical modeling, regression, forecasting, clustering, classification, A/B testing  
 - **Data Engineering:** ETL pipeline design, schema modeling, Git/GitHub  
-- **BI/Viz:** Tableau, Power BI  
-- **Other:** Data storytelling, experimental design, visualization best practices
+- **BI & Visualization:** Tableau, Power BI  
+- **Other:** Data storytelling, experimental design, technical communication
