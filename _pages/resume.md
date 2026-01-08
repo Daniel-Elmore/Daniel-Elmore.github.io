@@ -49,10 +49,11 @@ classes: wide
 
 
 [**Are MLB Teams Spending Smarter?: An ROI Analysis of Payroll vs. Performance**](/projects/mlb-roi/)  
-- Built a SQL + Python pipeline integrating Lahman & Neil Paine WAR datasets for data cleaning, schema design, and regression analysis.  
-- Found payroll explained only ~12% of wins, with diminishing returns above ~$150M.  
-- Identified small-market teams (Rays, A’s) achieving ~3× efficiency relative to payroll.  
-- Produced executive-ready visualizations and a McKinsey-style slide deck to communicate findings to non-technical audiences.  
+- Built a relational SQL + Python pipeline integrating Lahman salary data and Neil Paine WAR metrics to evaluate payroll efficiency across MLB teams from 2012–2016, reframing spending as a return-on-investment problem.  
+- Demonstrated that payroll explained only ~12% of variation in team performance (R² ≈ 0.12), with league payroll rising 28% while aggregate WAR increased just 4%, indicating widespread diminishing returns to spending.  
+- Identified stark efficiency gaps across franchises, with small-market teams (Rays, A’s) achieving roughly 3× the WAR per dollar of large-market teams (Yankees, Dodgers), highlighting allocation discipline as a competitive advantage.  
+- Showed that returns flatten sharply beyond ~$150M in payroll and that position players consistently outperform pitchers in ROI, revealing systematic overvaluation of high-cost pitching contracts.
+
 
 [**User Behavior and Citi Bike**](/projects/citi-bike/)  
 - Analyzed 30M+ NYC bike-share rides in R, combining geospatial mapping and hypothesis testing to evaluate rider behavior.  
