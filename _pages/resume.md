@@ -11,7 +11,7 @@ classes: wide
 
 ## Experience
 
-**The Tony Kinnett Cast** — *Revenue & Growth Operations Analyst*  
+**The Tony Kinnett Cast** — *Growth Analytics Consultant*  
 *Indianapolis, IN (Remote) | Aug 2024–Present*  
 - Analyzed monetization performance across advertising, memberships, and donations using audience behavior metrics, engagement data, and revenue analytics to assess monetization readiness and support go-to-market decisions, contributing to five-figure monthly recurring revenue.  
 - Evaluated content structure, engagement signals, view duration, click-through behavior, and SEO-driven discovery factors to optimize hooks, pacing, and ad timing, contributing to an ~8× increase in views.  
