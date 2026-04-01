@@ -7,7 +7,7 @@ toc: false
 classes: wide
 ---
 
-[**Download Resume (PDF)**](/assets/docs/Daniel_Elmore_Resume__Updated_12_29_25.pdf)
+[**Download Resume (PDF)**](/assets/docs/Daniel_Elmore_Resume__Updated_4_1_26.pdf)
 
 ## Experience
 
