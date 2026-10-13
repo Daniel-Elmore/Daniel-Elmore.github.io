@@ -12,8 +12,8 @@ classes: wide
 ## Professional Experience
 
 
-**The Tony Kinnett Cast**  | **Executive Producer** 
-*Indianapolis, IN (Remote) | Aug 2024–Present*
+**The Tony Kinnett Cast** — *Executive Producer*  
+*Washington, D.C. (Remote) | Oct 2024–Dec 2025*
 
 - Co-lead production, editorial strategy, and audience development for a nationally syndicated political commentary program, coordinating four contractors across research, booking, editing, and distribution.
 - Develop AI-assisted workflows for recurring production processes, including transcript analysis, clip identification, show notes, and editorial preparation, reducing repetitive work and standardizing production workflows.
