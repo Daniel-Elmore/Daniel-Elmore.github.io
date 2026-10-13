@@ -12,17 +12,12 @@ classes: wide
 ## Professional Experience
 
 
-**The Tony Kinnett Cast**  
+**The Tony Kinnett Cast**  | **Executive Producer** 
 *Indianapolis, IN (Remote) | Aug 2024–Present*
-
-**Executive Producer** | *Jan 2026–Present*
 
 - Co-lead production, editorial strategy, and audience development for a nationally syndicated political commentary program, coordinating four contractors across research, booking, editing, and distribution.
 - Develop AI-assisted workflows for recurring production processes, including transcript analysis, clip identification, show notes, and editorial preparation, reducing repetitive work and standardizing production workflows.
 - Oversee daily production decisions, using audience analytics and performance data to optimize programming structure, content distribution, and viewer retention.
-
-**Growth Analytics Consultant** | *Aug 2024–Dec 2025*
-
 - Analyzed audience retention, click-through rates, and discovery traffic to guide programming and distribution strategy, contributing to growth from fewer than 50,000 to more than 1 million weekly views across my involvement with the program.
 - Built a Python ETL pipeline integrating Nielsen, YouTube, X, and Megaphone data into PostgreSQL, consolidating cross-platform performance reporting and reducing manual reporting effort by approximately 50%.
 - Conducted cohort analyses and A/B testing to evaluate content performance, audience behavior, and monetization strategies, identifying opportunities to improve viewer retention.
